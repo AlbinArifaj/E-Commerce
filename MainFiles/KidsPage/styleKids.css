@@ -6,6 +6,7 @@
 }
 
 .container-fluid{
+    margin-top: 20px;
 }
 .col-md-4:hover img{
     filter: blur(10px);

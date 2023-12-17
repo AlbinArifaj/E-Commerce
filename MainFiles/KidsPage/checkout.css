@@ -1,0 +1,68 @@
+.productImage{
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+}
+
+.allInfo{
+    float: right;
+    margin-top: -400px;
+    margin-right: 400px;
+}
+
+.productName{
+    font-size: 25px;
+    font-family: 'Belanosima', sans-serif;
+}
+.prductPrice{
+    font-size: 25px;
+    font-family: 'Belanosima', sans-serif;
+}
+.allSizes{
+    font-size: 15px;
+    opacity: 70%;
+
+    font-family: 'Belanosima', sans-serif;
+}
+hr{
+    width: 100%;
+}
+.size{
+    width: 300px;
+    border: none ;
+    border-bottom: 1px solid black;
+    height: 40px;
+    font-family: 'Belanosima', sans-serif;
+
+}
+
+.submitButton{
+    display: block;
+}
+.productImage{
+    margin-top: 50px;
+    margin-left: 180px;
+    background-color: 	lightgray;
+}
+
+.ref{
+    font-weight:100;
+    opacity: 70%;
+    font-family: 'Belanosima', sans-serif;  
+
+}
+
+.submitButton{
+    background-color: black;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-family: 'Belanosima', sans-serif;  
+}
+
+.productDetails{
+    font-family: 'Belanosima', sans-serif;  
+
+}
+
