@@ -2,16 +2,18 @@ body {
     /* background-image: url('Img1.jpg');
     background-size: cover; */
     margin: 0;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #epara{
     color: black;
     margin-bottom: 0px;
+    position: fixed;
+    z-index: 1;
 }
 h1{
   
-    font-family: 'Abril Fatface', serif;
+font-family: 'Abril Fatface', serif;
 font-family: 'Caprasimo', serif;
 font-family: 'DM Serif Display', serif;
 font-family: 'Kanit', sans-serif;
@@ -21,3 +23,11 @@ font-family: 'Vina Sans', sans-serif;
 }
 
 
+#carouselExample{
+    width: 100%;
+    margin-top: -90px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 100%;
+    /* height: 200px; */
+}
