@@ -1,0 +1,27 @@
+*{
+    overflow-x: hidden;
+    margin: 0px;  
+    padding: 0px;  
+}
+
+.container-fluid{
+}
+
+.col-md-4{
+
+    display: inline-block;
+    float: left;
+    height:415px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.firstImage{
+    height: 175px;
+    margin-left: 60px;
+
+}
+
+.firstParagraph{
+    font-family: 'Belanosima', sans-serif;
+}
+
