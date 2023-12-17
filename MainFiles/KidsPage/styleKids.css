@@ -2,26 +2,83 @@
     overflow-x: hidden;
     margin: 0px;  
     padding: 0px;  
+    /* background-color: aliceblue; */
 }
 
 .container-fluid{
 }
+.col-md-4:hover img{
+    filter: blur(10px);
+    transition: 0.7s;
+}
+.col-md-4:hover .goToProduct{
+    opacity: 1;
+    z-index: 1;
+    text-decoration: none;
+    transition: 0.7s;
+}
+.col-md-4:hover .firstParagraph{
+    opacity: 0;
+    z-index: 1;
+    text-decoration: none;
+    /* text */
+    transition: 0.2s;
+}
 
+.col-md-4:hover .qmimi{
+    opacity: 0;
+    z-index: 1;
+    text-decoration: none;
+    /* text */
+    transition: 0.2s;
+}
+.goToProduct{
+    opacity: 0;
+    margin-top: -70px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Belanosima', sans-serif;
+
+}
 .col-md-4{
-
     display: inline-block;
     float: left;
-    height:415px;
+    height:460px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .firstImage{
-    height: 175px;
-    margin-left: 60px;
-
+    height: 380px;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
-
 .firstParagraph{
+    opacity: 1;
+    text-align: center;
     font-family: 'Belanosima', sans-serif;
+    /* display: inline-block; */
+    font-size: 20px;
+    color: black;
 }
 
+.qmimi{
+    /* display: inline-block; */
+    opacity: 1;
+    text-align: center;
+    /* float: right; */
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    color: black;
+
+
+}
+
+
+
+.linkToBuy{
+    text-decoration: none;
+
+}
