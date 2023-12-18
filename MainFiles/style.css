@@ -169,6 +169,49 @@ p {
   a {
     text-decoration: none;
   }
+  .logo {
+    text-align: center; 
+  }
+  
+  .logo img {
+    margin: 0 auto;
+    align-items: center; 
+  }
+  .fnd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+h2.ff{
+    text-align: center;
+}
+  
   
   
   
