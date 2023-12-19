@@ -42,7 +42,7 @@ div h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border color: white;
+    border-color: white;
 }
 .modelet .card {
     border-radius: 5px;

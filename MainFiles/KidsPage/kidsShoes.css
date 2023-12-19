@@ -11,6 +11,7 @@
 .col-md-4:hover img{
     filter: blur(10px);
     transition: 0.7s;
+    
 }
 .col-md-4:hover .goToProduct{
     opacity: 1;
@@ -80,3 +81,91 @@
     text-decoration: none;
 
 }
+
+
+
+a {
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  }
+  .logo {
+    text-align: center; 
+  }
+  
+  .logo img {
+    margin: 0 auto;
+    align-items: center; 
+  }
+  .fnd {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 100px;
+    background-color:#282d32;
+
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a.help{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    /* margin-top: 5px; */
+    
+}
+
+
+a.about:hover{
+    /* width: 30%; */
+    /* border-bottom: 1px solid white; */
+    /* display:inline-block; */
+    /* padding: 0px; */
+    /* margin: 0px; */
+
+}
+
+a.sign{
+    color: white;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+
+}
+h2.ff{
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+  
+.entireParagraph{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  
+  
+  
