@@ -64,5 +64,33 @@ hr{
 .productDetails{
     font-family: 'Belanosima', sans-serif;  
 
+    margin-top: 20px;
+    border: none;
+    background-color: white;
 }
 
+
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 1020px;
+    height: 100%;
+    right: 0px;
+}
+.modal-content {
+    height: 100%;
+}
+
+.productInfo{
+    margin-top: 160px;
+}
+
+.productElemnt{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.productDetailsHeading{
+    margin-bottom: 50px;
+}
