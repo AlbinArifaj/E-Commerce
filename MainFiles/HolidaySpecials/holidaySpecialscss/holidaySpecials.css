@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 75px;
+}
+#video-container{
+    position: relative;
+    width: 100%;
+}
+.text-over{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+}
+button{
+    background-color: transparent !important;
+    border-color: #777 !important;
+    padding-bottom: 0.1% !important;
+}
+p{
+    color:white;
+}
+#dior-section{
+    line-height: 33px;
+    text-align: justify;
+    margin: 55px;
+    margin-left: 65px
+}
+div + img{
+    margin: 5px;
+}
+img:hover{
+    width: 80%;
+    transition: width 0.5s ease;
+    overflow: hidden;
+}
+/*img:not(:hover) {
+    width: 100%; 
+    transition: width 0.5s ease;
+}
+*/
+#adv-clnd-btn{
+    position: absolute; 
+    top: 185%;
+    left: 72.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    border-color: white !important;
+}
+
+a + p{
+    text-color: white; 
+}
+a{
+    text-decoration: none;
+}
