@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 video {
@@ -61,4 +62,7 @@ a + p{
 }
 a{
     text-decoration: none;
+}
+.btn:hover{
+    color:white ;
 }
