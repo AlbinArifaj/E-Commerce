@@ -1,6 +1,7 @@
 body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 video {
     width: 100%;
