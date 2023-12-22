@@ -15,10 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
    
     <style>
-        section{
-           margin-left: 55px;
+        section {
+            margin-left: 55px;
         }
-        article > 
+
+        #van_cleef {
+            position: relative;
+        }
+
+        #underline {
+            position: absolute;
+            height: 1px;
+            background-color: lightcoral; 
+            width: 0;
+            transition: width 0.2s ease-in-out;
+        }
+
+      
+    
     </style>
 </head>
 <body>
@@ -26,7 +40,7 @@
 
     <div id="video-container">
         <video autoplay muted>
-          <source src="/video/dior_video_holiday_specials.mp4" type="video/mp4">
+          <source src="/MainFiles/HolidaySpecials/video/dior_video_holiday_specials.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
     
@@ -51,23 +65,48 @@
             </p>
         </div>
         <div class="col-md-6" class="text-over">
-            <img id="calendar"style="margin-top: 55px; margin-left: 180px;" src="/holidayspecialsIMG/dior-adv-clnd.jpg" alt="2023 Dior Advent Calendar" width="550px">
+            <img id="calendar"style="margin-top: 55px; margin-left: 180px;" src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior-adv-clnd.jpg" alt="2023 Dior Advent Calendar" width="550px">
             <button class="btn btn-lg btn-primary gray-layered-btn" id="adv-clnd-btn"><a href="Here we link the product"><p>Details</p></a></button>
         </div>
     </div>
-    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/changeText.js"></script>
+    
     <br>
     <article>
-        <p style="text-align: center; font-size: 25px;">Our Hermes Christmas Specials</p>
+        <h3 style="text-align: center; color: aliceblue;">Our Hermes Christmas Specials</h3>
     </article>
     <br>
     <br>
     <section>
       <div class="row">
-        <div class="col-md-3">
-          <img src="/holidayspecialsIMG/hermes_purse.jpg" alt="Hermes Purse">
+        <div class="col-md-4">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/hermes_purse.jpg" alt="Hermes Purse" style="width:550px" class="card">
         </div>
+        <div class="col-md-4">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/amuletes_constance_pendant.jpg" alt="Hemres pendant" class="hermes_ad" id="pendant" class="card">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/H_long_sleeve_cardigan.jpg" alt="Long sleeve cardigan from hermes" class="hermes_ad" style="margin-top: -1376px; margin-left:250px" class="card">
+          </div>
+          <div class="col-md-4"> 
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/helia_60_sandal.jpg" alt="Helia 60 sandal" class="hermes_ad" style="margin-left:75px" class="card">
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/davis_h_sellier_cap.jpg" alt="Davis Hellier cap from Hermes" class="hermes_ad" style="margin:50px 50px 0px 75px" class="card">
+            </div>
       </div>
     </section>
+
+    <article style="text-align: center;" >
+        <h3 id="van_cleef" style="color:aliceblue; position:relative; z-index:1; margin-top:-200px;">
+           View the new Dior CGI 
+        </h3>
+        <div id="underline"></div>
+    </article>
+    <div style="display: flex; align-items: center; justify-content: right;" >
+      <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior_cgi.jpg" alt="Van Cleef" height="400px" style="margin-top: 50px;">
+    </div>
+
+
+
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/changeText.js"></script>
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/underlineHover.js"></script>
+
+
 </body>
 </html>

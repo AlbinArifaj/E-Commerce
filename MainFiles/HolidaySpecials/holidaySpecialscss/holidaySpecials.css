@@ -43,11 +43,7 @@ div + img{
     transition: width 0.5s ease;
     overflow: hidden;
 }
-/*img:not(:hover) {
-    width: 100%; 
-    transition: width 0.5s ease;
-}
-*/
+
 #adv-clnd-btn{
     position: absolute; 
     top: 185%;
@@ -66,4 +62,22 @@ a{
 }
 .btn:hover{
     color:white ;
+}
+.hermes_ad{
+    width: 250px;
+    height: 250px;
+    
+}
+#pendant{
+    margin:250px;
+    margin-top: 300px;
+}
+.special::before{
+    background: radial-gradient(
+        800px circle at 100px 100px,
+        rgba(255,255,255,0.06),
+        transparent 40%
+    );
+    border-radius: inherit;
+    margin: inherit;
 }
