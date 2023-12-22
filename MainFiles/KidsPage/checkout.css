@@ -1,96 +1,189 @@
-.productImage{
-    margin-top: 150px;
+
+ a {
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  }
+  .logo {
+    text-align: center; 
+  }
+  
+  .logo img {
+    margin: 0 auto;
+    align-items: center; 
+  }
+  .fnd {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 100px;
+    background-color:#282d32;
+
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a.help{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
+
+a.about:hover{
+
+}
+
+a.sign{
+    color: white;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+
+}
+h2.ff{
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+  
+.entireParagraph{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  
+  
+  
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.btn:active{
+    transform: scale(0.95);
+    
+}
+
+.popup{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 60px;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.8s step-start;    
+    box-sizing: border-box;
+   
+}
+
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
     width: 500px;
-    height: 500px;
+    margin-left: -800px;
+    
+
 }
 
-.allInfo{
-    float: right;
-    margin-top: -400px;
-    margin-right: 400px;
+.formDetails{
+    position: relative;
+    margin-top: -450px;
+    margin-left: 800px;
+    text-align: left;
+
 }
 
+.productImage{
+    margin-top: 20px;
+    background-color: gray;
+
+} 
 .productName{
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Belanosima', sans-serif;
 }
 .prductPrice{
     font-size: 25px;
     font-family: 'Belanosima', sans-serif;
 }
-.allSizes{
-    font-size: 15px;
+.ref{
+    font-weight:100;
     opacity: 70%;
-
-    font-family: 'Belanosima', sans-serif;
-}
-hr{
-    width: 100%;
-}
+    font-family: 'Belanosima', sans-serif;  
+} 
 .size{
     width: 300px;
     border: none ;
     border-bottom: 1px solid black;
     height: 40px;
     font-family: 'Belanosima', sans-serif;
-
-}
-
-.submitButton{
     display: block;
-}
-.productImage{
-    margin-top: 50px;
-    margin-left: 180px;
-    background-color: 	lightgray;
-}
-
-.ref{
-    font-weight:100;
+} 
+.allSizes{
+    font-size: 15px;
     opacity: 70%;
-    font-family: 'Belanosima', sans-serif;  
-
+    font-family: 'Belanosima', sans-serif;
 }
 
 .submitButton{
     background-color: black;
     margin-top: 10px;
     width: 300px;
+    display: block;
     height: 50px;
     color: white;
     font-family: 'Belanosima', sans-serif;  
-}
+} 
+.closePopupButton{
 
-.productDetails{
-    font-family: 'Belanosima', sans-serif;  
+    opacity: 60%;
+   
+} 
 
-    margin-top: 20px;
-    border: none;
-    background-color: white;
-}
-
-
-.modal-dialog {
-    position: fixed;
-    margin: auto;
-    width: 1020px;
-    height: 100%;
-    right: 0px;
-}
-.modal-content {
-    height: 100%;
-}
-
-.productInfo{
-    margin-top: 160px;
-}
-
-.productElemnt{
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.productDetailsHeading{
-    margin-bottom: 50px;
-}
+ 
