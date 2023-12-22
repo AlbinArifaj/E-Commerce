@@ -85,7 +85,7 @@ a{
     
     width: 350px;
     height: 250px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(203, 194, 194, 0.725);
     border-radius: 6px;
     position: absolute;
     top: 0;
@@ -102,13 +102,14 @@ a{
     visibility: visible;
     top:50%;
     transform: translate(-50%, -50%) scale(1);
-    border: 3px solid darkred;
+   
 }
 .popupp img{
+    background-color: rgba(203, 194, 194, 0.542);
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
-    border-top: 3px solid darkred;
+    
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 .popupp h3{
@@ -117,6 +118,70 @@ a{
     margin: 30px 0 10px;
 }
 #okay_btn{
-    background-color: aquamarine;
+    background-color: darkred !important;
+    color: white !important;
+    z-index: -1 !important;
+    padding-bottom: 10px !important;
+   
+}
+
+
+
+.fnd {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 100px;
+    background-color:#ffffffda;
+
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #00000000;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
     
+}
+
+a.about:hover{
+
+}
+
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+
+}
+h2.ff{
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+  
+.entireParagraph{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
