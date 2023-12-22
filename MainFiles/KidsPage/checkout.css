@@ -1,5 +1,5 @@
 
-a {
+ a {
     text-decoration: none;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -44,7 +44,6 @@ a.about{
     text-decoration: none;
     color: white;
     text-align: center;
-    /* margin-top: 5px; */
     
 }
 
@@ -131,70 +130,60 @@ h2.ff{
     
 
 }
+
+.formDetails{
+    position: relative;
+    margin-top: -450px;
+    margin-left: 800px;
+    text-align: left;
+
+}
+
 .productImage{
     margin-top: 20px;
     background-color: gray;
 
-}
-
-.allInfo{
-    margin-top: -450px;
-    margin-left:140px ;
-    display: block;
-    }
-    .productName{
-        font-size: 28px;
-        font-family: 'Belanosima', sans-serif;
-        font-size: 25px;
-        margin-left: 10px;
-    }
-    
- 
-
- .prductPrice{
-    font-size: 25px;
-    margin-left: -115px;
+} 
+.productName{
+    font-size: 28px;
     font-family: 'Belanosima', sans-serif;
 }
- 
+.prductPrice{
+    font-size: 25px;
+    font-family: 'Belanosima', sans-serif;
+}
 .ref{
     font-weight:100;
     opacity: 70%;
     font-family: 'Belanosima', sans-serif;  
-    margin-left: -130px;
 } 
-
-
-.allSizes{
-    font-size: 15px;
-    opacity: 70%;
-    margin-left: -130px;
-    font-family: 'Belanosima', sans-serif;
-}
 .size{
     width: 300px;
     border: none ;
     border-bottom: 1px solid black;
     height: 40px;
     font-family: 'Belanosima', sans-serif;
-    margin-left: 140px;
+    display: block;
 } 
+.allSizes{
+    font-size: 15px;
+    opacity: 70%;
+    font-family: 'Belanosima', sans-serif;
+}
+
 .submitButton{
     background-color: black;
     margin-top: 10px;
     width: 300px;
-    margin-left: 580px;
     display: block;
     height: 50px;
     color: white;
     font-family: 'Belanosima', sans-serif;  
 } 
+.closePopupButton{
 
- .productDetails{
-    font-family: 'Belanosima', sans-serif;  
-    /* margin-left: 10000px;  */
-    margin-top: 20px;
-    border: none;
-    background-color: white;
+    opacity: 60%;
+   
 } 
 
+ 

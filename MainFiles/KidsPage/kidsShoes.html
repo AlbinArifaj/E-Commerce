@@ -14,8 +14,13 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet">
     <title>Kids</title>
+
+
+   
 </head>
 <body class="finalStep">
+
+
 
 
     <div class="container-fluid">
@@ -114,21 +119,19 @@
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
         </div>
-        <!-- <div id="page-mask"></div> -->
 
-        
 
         <div class="container">
-            <!-- <button type="submit" class="btn" onclick="openPopup()">Submit</button> -->
+
             <div class="popup" id="popup">
-                <!-- <div class="allProductImages"> -->
-                    <img class="productImage" src="/KidsImages/imageedit_1_3949189767.png">
-                <!-- </div> -->
-                <!-- <form class="formElements"> -->
+
+                    <img  class="productImage" src="/KidsImages/imageedit_1_3949189767.png">
+                    <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
+                    <form class="formDetails" >
                     <div class="allInfo">
-                    <p class="productName"></p>
+                    <p class="productName">AAA</p>
                     <p class="ref">XYZ</p>
-                    <p class="prductPrice"></p>
+                    <p class="prductPrice">100</p>
                     <p class="allSizes"></p>
                     <select class="size" name="size">
                         <option name="s">S</option>
@@ -136,16 +139,39 @@
                         <option name="l">L</option>
                     </select>
                     <input class="submitButton" type="submit"  value="Click & Collect">
-                    <button type="button" onclick="closePopup()" class="productDetails btn-demo" data-toggle="modal" data-target="#myModal2"> Product Details</button>
-
-                        
+                    <button type="button" class="productDetails btn-demo" data-toggle="modal" data-target="#myModal2"> Product Details</button>
+                </form>
                 </div>
             </div>  
           
           </div>
 
-        
+
+          <div class="container demo">
+            <div class="text-center">
+            </div>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <div class="modal-body">
+                    <ul class="productInfo" style="list-style-type: none;">
+                      <li><h3  class="productDetailsHeading productElemnt">Product Details</h3></li>
+                      <li class="productElemnt">Dimensions : 12.2 in (L) x 11.8 in (H) x 7.5 in (W) </li>
+                      <li class="productElemnt">Material : Polyamide canvas with inside coating </li>
+                      <li class="productElemnt">Trimming : Russian leather (cowhide) </li>
+                      <li class="productElemnt">Weight : 0.63 lb                </li>
+                      <li class="productElemnt">EXTERIOR DETAILS</li>
+                      <li class="productElemnt">Closing : Zipped and snap closure</li>
+                      <li class="productElemnt">INTERIOR DETAIL</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <script src="/MainFiles/KidsPage/script.js"></script> 
+          <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 
 </body>
 </html>

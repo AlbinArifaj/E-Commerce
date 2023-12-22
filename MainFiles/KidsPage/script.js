@@ -14,8 +14,6 @@ function openPopup(){
         var elmentName = clickedElement.querySelector('.firstParagraph').innerHTML;
         var elementPrice = clickedElement.querySelector('.qmimi').innerHTML;
 
-        console.log(elmentName)
-        console.log(clickedElement)
         document.querySelector(".productImage").src=selectImage
         document.querySelector(".productName").innerHTML = elmentName;
         document.querySelector(".prductPrice").innerHTML = elementPrice;
@@ -23,6 +21,8 @@ function openPopup(){
      })
   }) 
 }
+
+ 
 function closePopup(){
   popup.classList.remove('open-popup')
   $('html').css('overflow-y','scroll')
