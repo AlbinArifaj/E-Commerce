@@ -109,7 +109,7 @@ a{
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
-    
+    border-top: 1px dotted darkred;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 .popupp h3{
