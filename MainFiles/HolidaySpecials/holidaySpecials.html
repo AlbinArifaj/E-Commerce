@@ -30,8 +30,32 @@
             width: 0;
             transition: width 0.2s ease-in-out;
         }
+        #typing-container {
+            height: 150px; 
+            
+        }
 
-      
+        #typing-text {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #fff;
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 4px;
+            animation: typing 5s steps(34) forwards;
+        }
+        .paused{
+           animation-play-state: paused;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
     
     </style>
 </head>
@@ -46,15 +70,22 @@
     
         <div class="text-over">
           <div col-md-6>
-            <button class="btn btn-lg btn-primary gray-layered-btn" id="dior_btn">
+            <button class="btn btn-lg btn-primary gray-layered-btn" id="dior_btn" onclick="openPopupp()">
                 <p style="color:rgb(183, 183, 182)" id="text-to-change" class="original-text" onmouseover="changeText()" onmouseout="resetText(this)">Order Dior's Advent Calendar</p>
             </button>
+            <div class="popupp" id="popupp">
+              <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/check_btn.jpg" alt="Check">
+              <h4>Type the code below for a 25% discount</h4>
+              <br>
+              <h5>cdjn-4567-8930</h5>
+              <button type="button" onclick="closePopupp()" id="okay_btn">Okay</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-5">
-            <p id="dior-section">
+            <p class="dior-section">
                 "At night, stretched out in the magical Dior gardens, looking north, I gaze up to the constellations around the North Star that seem to play in the twinkling sky. I breathe in the heady scent of the flowers. Their fragrance mingles with the magic of the constellations, bringing this fantastic scene to life." 
                 <br>
                 - Pietro Ruffo -
@@ -67,6 +98,7 @@
         <div class="col-md-6" class="text-over">
             <img id="calendar"style="margin-top: 55px; margin-left: 180px;" src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior-adv-clnd.jpg" alt="2023 Dior Advent Calendar" width="550px">
             <button class="btn btn-lg btn-primary gray-layered-btn" id="adv-clnd-btn"><a href="Here we link the product"><p>Details</p></a></button>
+
         </div>
     </div>
     
@@ -93,20 +125,51 @@
     </section>
 
     <article style="text-align: center;" >
-        <h3 id="van_cleef" style="color:aliceblue; position:relative; z-index:1; margin-top:-200px;">
-           View the new Dior CGI 
-        </h3>
-        <div id="underline"></div>
+        <h2 id="van_cleef" style="color:whitesmoke; position:relative; z-index:1; margin-top:-200px;">
+              CGI in Maison de Dior 
+          </h2>
+          
     </article>
-    <div style="display: flex; align-items: center; justify-content: right;" >
-      <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior_cgi.jpg" alt="Van Cleef" height="400px" style="margin-top: 50px;">
+        <div id="underline"></div>
+        <br><br>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div id="typing-container">
+              <p class="dior-section paused" id="typing-text" style="margin-top: 50px;">
+                  Excitement is in the pixels! Experience the CGI.</p>
+                  <br>
+              <p style="font-size: 24px;  letter-spacing: 3px; line-height:40px;">Experience fashion in a whole new light. 
+                <br>
+                Dior's captivating CGI presentation is on the horizon.
+                <br>
+                <br>
+                And it is promising a visual masterpiece that pushes the boundaries of style and storytelling.
+              </p>
+            </div>
+        </div>
+    <div class="col-md-5" style="display: flex; align-items: center; justify-content: right;" >
+        <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior_cgi.jpg" alt="Van Cleef" height="325px" style="margin-top: 50px;">
     </div>
+  </div>
+  
+    <script>
+      let popupp = document.getElementById("popupp");
+
+      function openPopupp(){
+        popupp.classList.add("open-popupp");
+      }
+      function closePopupp(){
+        popupp.classList.remove("open-popupp");
+      }
+    </script>
+   
+   
+
 
 
 
     <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/changeText.js"></script>
     <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/underlineHover.js"></script>
-
-
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/typingText.js"></script>
 </body>
 </html>
