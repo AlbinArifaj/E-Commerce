@@ -1,0 +1,111 @@
+body {
+    /* background-image: url('Img1.jpg');
+    background-size: cover; */
+    margin: 0;
+    /* padding: 10px; */
+}
+
+#epara{
+    color: black;
+    margin-bottom: 0px;
+    position: fixed;
+    z-index: 1;
+}
+#titulli{
+  
+font-family: 'Abril Fatface', serif;
+font-family: 'Caprasimo', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Preahvihear', sans-serif;
+font-family: 'Vina Sans', sans-serif;
+color: rgb(0, 0, 0);
+font-size: 40px;
+}
+
+
+#Front{
+    width: 100%;
+    margin-top: -90px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 100%;
+    /* height: 200px; */
+}
+
+
+div h3{
+    font-size: 15px;
+}
+
+
+p.air{
+    text-align: right;
+    
+}
+@font-face {
+    font-family: "Preahvihear-Regular";
+    src: url(Preahvihear-Regular.ttf);
+}
+
+
+
+
+
+p {
+    margin: 0;
+    font-size: 18px;
+    text-align: right;
+}
+
+
+
+@font-face {
+    font-family: "SourceCodePro-Italic-VariableFont_wght","SourceCodePro-VariableFont_wght";
+    src: url(SourceCodePro-Italic-VariableFont_wght.ttf);
+    src: url(SourceCodePro-VariableFont_wght.ttf);
+}
+
+  
+
+  
+  a {
+    text-decoration: none;
+  }
+  .logo {
+    text-align: center; 
+  }
+  
+  .logo img {
+    margin: 0 auto;
+    align-items: center; 
+  }
+ 
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+h2.ff{
+    text-align: center;
+}
+  
+  
+  
+  
+  
