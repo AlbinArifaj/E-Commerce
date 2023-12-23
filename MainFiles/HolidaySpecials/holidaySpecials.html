@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Holiday Specials</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link href="./holidaySpecialscss/holidaySpecials.css" rel="stylesheet">
+    <link rel="stylesheet" href="./holidaySpecialsjs/changeText.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
+   
+    <style>
+        section {
+            margin-left: 55px;
+        }
+
+        #van_cleef {
+            position: relative;
+        }
+
+        #underline {
+            position: absolute;
+            height: 1px;
+            background-color: lightcoral; 
+            width: 0;
+            transition: width 0.2s ease-in-out;
+        }
+        #typing-container {
+            height: 150px; 
+            
+        }
+
+        #typing-text {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #fff;
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 4px;
+            animation: typing 5s steps(34) forwards;
+        }
+        .paused{
+           animation-play-state: paused;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+    
+    </style>
+
+    
+</head>
+<body>
+    
+
+    <div id="video-container">
+        <video autoplay muted>
+          <source src="/MainFiles/HolidaySpecials/video/dior_video_holiday_specials.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    
+        <div class="text-over">
+          <div col-md-6>
+            <button class="btn btn-lg btn-primary gray-layered-btn" id="dior_btn" onclick="openPopupp()">
+                <p style="color:rgb(183, 183, 182)" id="text-to-change" class="original-text" onmouseover="changeText()" onmouseout="resetText(this)">Order Dior's Advent Calendar</p>
+            </button>
+            <div class="popupp" id="popupp">
+              <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/check_btn-removebg.png" alt="Check">
+              <h4>Type the code below for a 25% discount</h4>
+              <br>
+              <h5>cdjn-4567-8930</h5>
+              <button class="btn btn-md"  onclick="closePopupp()" id="okay_btn">Okay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+            <p class="dior-section">
+                "At night, stretched out in the magical Dior gardens, looking north, I gaze up to the constellations around the North Star that seem to play in the twinkling sky. I breathe in the heady scent of the flowers. Their fragrance mingles with the magic of the constellations, bringing this fantastic scene to life." 
+                <br>
+                - Pietro Ruffo -
+                <br>
+                Pietro Ruffo, friend of the House of Dior, has imagined a magical and luxurious astral world where a profusion of flowers, wondrous constellations, stardust and fantastic beasts mix.
+                <br>
+                Open each of the 24 windows of the Advent calendar one by one, and discover a new Dior surprise to fill each day in December until Christmas with magic and wonder.
+            </p>
+        </div>
+        <div class="col-md-6" class="text-over">
+            <img id="calendar"style="margin-top: 55px; margin-left: 180px;" src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior-adv-clnd.jpg" alt="2023 Dior Advent Calendar" width="550px">
+            <button class="btn btn-lg btn-primary gray-layered-btn" id="adv-clnd-btn"><a href="https://adventcalendar.co.uk/dior-advent-calendar/"><p>Details</p></a></button>
+
+        </div>
+    </div>
+    
+    <br>
+    <article>
+        <h3 style="text-align: center; color: aliceblue;">Our Hermes Christmas Specials</h3>
+    </article>
+    <br>
+    <br>
+    <section>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/hermes_purse.jpg" alt="Hermes Purse" style="width:550px" class="card">
+        </div>
+        <div class="col-md-4">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/amuletes_constance_pendant.jpg" alt="Hemres pendant" class="hermes_ad" id="pendant" class="card">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/H_long_sleeve_cardigan.jpg" alt="Long sleeve cardigan from hermes" class="hermes_ad" style="margin-top: -1376px; margin-left:250px" class="card">
+          </div>
+          <div class="col-md-4"> 
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/helia_60_sandal.jpg" alt="Helia 60 sandal" class="hermes_ad" style="margin-left:75px" class="card">
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/davis_h_sellier_cap.jpg" alt="Davis Hellier cap from Hermes" class="hermes_ad" style="margin:50px 50px 0px 75px" class="card">
+            </div>
+      </div>
+    </section>
+
+    <article style="text-align: center;" >
+        <h2 id="van_cleef" style="color:whitesmoke; position:relative; z-index:1; margin-top:-200px;">
+              CGI in Maison de Dior 
+          </h2>
+          
+    </article>
+        <div id="underline"></div>
+        <br><br>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div id="typing-container">
+              <p class="dior-section paused" id="typing-text" style="margin-top: 50px;">
+                  Excitement is in the pixels! Experience the CGI.</p>
+                  <br>
+              <p style="font-size: 24px;  letter-spacing: 3px; line-height:40px;">Experience fashion in a whole new light. 
+                <br>
+                Dior's captivating CGI presentation is on the horizon.
+                <br>
+                <br>
+                And it is promising a visual masterpiece that pushes the boundaries of style and storytelling.
+              </p>
+            </div>
+        </div>
+    <div class="col-md-5" style="display: flex; align-items: center; justify-content: right;" >
+        <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/dior_cgi.jpg" alt="Van Cleef" height="325px" style="margin-top: 50px;">
+    </div>
+  </div>
+  
+  <!--Footer-->
+  <div class="fnd">
+    <div class="fndi">
+    <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
+        <a href="#" class="help">Our Client Services are available<br> for call
+            from 9 AM to 6 PM <br> Monday to Thursday.</a>
+        <a href="#" class="help">Email Services are available 24/7</a>
+        <a href="#" class="help">CONTACT US: 0800100</a>
+        <br>
+        <a href="#" class="help">EMAIL: support@rhae.com</a>
+        <br>
+        <a href="#" class="help">Stores</a>
+    
+    </div>
+    <div  class="fndi">
+        <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">About Us & Partners    </h2>
+        <a href="#" class="about">Louis Vuitton</a><br>
+        <a href="#" class="about">Chanel</a><br>
+        <a href="#" class="about">Dior</a><br>
+        <a href="#" class="about">Hermes</a><br>
+        <a href="#" class="about">Nike</a><br>
+        <a href="#" class="about">Prada</a><br>
+        <a href="#" class="about">Balenciaga</a><br>
+        <h1 style="color:black; text-align: center;
+        font-family: 'Montserrat', sans-serif;">RHAE</h1>
+        </div>
+        <div class="fndi">
+            <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Email Sign-Up  </h2>
+           <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
+            </div>
+    </div>
+
+
+
+    <!--For the 25% discount-->
+    <script>
+      let popupp = document.getElementById("popupp");
+
+      function openPopupp(){
+        popupp.classList.add("open-popupp");
+      }
+      function closePopupp(){
+        popupp.classList.remove("open-popupp");
+      }
+    </script>
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/changeText.js"></script>
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/underlineHover.js"></script>
+    <script src="/MainFiles/HolidaySpecials/holidaySpecialsjs/typingText.js"></script>
+</body>
+</html>

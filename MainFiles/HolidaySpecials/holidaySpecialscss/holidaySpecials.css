@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
@@ -28,25 +29,21 @@ button{
 p{
     color:white;
 }
-#dior-section{
+.dior-section{
     line-height: 33px;
     text-align: justify;
     margin: 55px;
-    margin-left: 65px
+    margin-left: 65px;
 }
 div + img{
     margin: 5px;
 }
-img:hover{
+#calendar:hover{
     width: 80%;
     transition: width 0.5s ease;
     overflow: hidden;
 }
-/*img:not(:hover) {
-    width: 100%; 
-    transition: width 0.5s ease;
-}
-*/
+
 #adv-clnd-btn{
     position: absolute; 
     top: 185%;
@@ -62,4 +59,129 @@ a + p{
 }
 a{
     text-decoration: none;
+}
+.btn:hover{
+    color:white ;
+}
+.hermes_ad{
+    width: 250px;
+    height: 250px;
+    
+}
+#pendant{
+    margin:250px;
+    margin-top: 300px;
+}
+.special::before{
+    background: radial-gradient(
+        800px circle at 100px 100px,
+        rgba(255,255,255,0.06),
+        transparent 40%
+    );
+    border-radius: inherit;
+    margin: inherit;
+}
+.popupp{
+    
+    width: 350px;
+    height: 250px;
+    background-color: rgba(203, 194, 194, 0.725);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popupp{
+    color: black;
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+   
+}
+.popupp img{
+    background-color: rgba(203, 194, 194, 0.542);
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border-top: 1px dotted darkred;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.popupp h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+#okay_btn{
+    background-color: darkred !important;
+    color: white !important;
+    z-index: -1 !important;
+    padding-bottom: 10px !important;
+   
+}
+
+
+
+.fnd {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 100px;
+    background-color:#ffffffda;
+
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #00000000;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    
+}
+
+a.about:hover{
+
+}
+
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+
+}
+h2.ff{
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+  
+.entireParagraph{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
