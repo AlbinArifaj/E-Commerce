@@ -18,8 +18,8 @@ function openPopup(){
         document.querySelector(".productName").innerHTML = elmentName;
         document.querySelector(".prductPrice").innerHTML = elementPrice;
 
-     })
-  }) 
+     });
+  }); 
 }
 
  
