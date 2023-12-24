@@ -129,11 +129,6 @@
     border: none;
     background-color: white;
 }  
-
-
-
-
-
  a {
     text-decoration: none;
     overflow-x: hidden;
@@ -174,45 +169,6 @@ a.help{
     color: white;
     text-align: center;
 }
-a.about{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    
-}
-
-a.about:hover{
-
-}
-
-a.sign{
-    color: white;
-}
-.fnd .fndi a {
-    line-height: 24px;
-    margin-bottom: 20px;
-
-}
-h2.ff{
-    text-align: center;
-    color: white;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
-}
-  
-.entireParagraph{
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-  
-  
-  
-
 
 .btn{
     padding: 10px 60px;
