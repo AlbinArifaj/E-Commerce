@@ -2,10 +2,13 @@
     overflow-x: hidden;
     margin: 0px;  
     padding: 0px;  
+    
 }
 
+
 .container-fluid{
-    margin-top: 20px;
+    margin-top: 10px;
+    
 
 }
 .col-md-4:hover img{
@@ -45,9 +48,10 @@
 .col-md-4{
 
     display: inline-block;
-    /* float: left; */
+    float: left;
     height:460px;
     border: 1px solid rgba(0, 0, 0, .1);
+    overflow-y: hidden;
 }
 
 .firstImage{
@@ -75,8 +79,6 @@
 
 }
 
-
-
 .linkToBuy{
     text-decoration: none;
 
@@ -84,88 +86,49 @@
 
 
 
-a {
-    text-decoration: none;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
-  }
-  .logo {
-    text-align: center; 
-  }
-  
-  .logo img {
-    margin: 0 auto;
-    align-items: center; 
-  }
-  .fnd {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-top: 100px;
-    background-color:#282d32;
-
-}
-
-.fnd.fndi {
-    border-radius: 5px;
-    border: 1px solid #e3e3e3;
-    padding: 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-a.help{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-a.about{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    /* margin-top: 5px; */
-    
+.closePopupButton{
+    position: absolute;
+    margin-top: 50px;
+    /* margin-top: -100px; */
+    margin-left: 700px;
+    font-size: 40px;
+    border: 0px;
+    background-color: white
 }
 
 
-/* a.about:hover{
-    /* width: 30%; */
-    /* border-bottom: 1px solid white; */
-    /* display:inline-block; */
-    /* padding: 0px; */
-    /* margin: 0px; }*/
 
- 
 
-a.sign{
-    color: white;
-}
-.fnd .fndi a {
-    line-height: 24px;
-    margin-bottom: 20px;
 
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 1020px;
+    height: 100%;
+    right: 0px;
 }
-h2.ff{
-    text-align: center;
-    color: white;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
+.modal-content {
+    height: 100%;
 }
-  
-.entireParagraph{
-    color: white;
+
+.productInfo{
+    margin-top: 160px;
+}
+
+.productElemnt{
+    margin-top: 10px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
+.productDetailsHeading{
+    margin-bottom: 50px;
+}
 
-  
-  
-  
+
+ .productDetails{
+    font-family: 'Belanosima', sans-serif;  
+    border: none;
+    background-color: white;
+}  
+
