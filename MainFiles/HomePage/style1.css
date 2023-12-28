@@ -54,3 +54,9 @@
     display: block;
     margin:10px;
 }
+
+.pa ul li:hover .category ul li{
+    width:160px;
+    padding: 10px;
+
+}
