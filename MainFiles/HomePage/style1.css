@@ -60,3 +60,34 @@
     padding: 10px;
 
 }
+
+.category-1{
+    display: none;
+}
+.category ul li:hover .category-1{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-2{
+    display: none;
+}
+.category ul li:hover .category-2{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-3{
+    display: none;
+}
+.category ul li:hover .category-3{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
