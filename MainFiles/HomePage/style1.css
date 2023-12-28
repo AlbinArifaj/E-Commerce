@@ -14,3 +14,11 @@
     justify-content: space-between;
     padding 0 5px:
 }
+.pa ul{
+    list-style: none;
+    display: flex;
+}
+.pa ul li{
+    padding: 10px 30px;
+    position:relative
+}
