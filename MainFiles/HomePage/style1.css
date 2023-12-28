@@ -35,3 +35,10 @@
     font-size: 30px;
  vertical-align:super;
 }
+
+.pa ul li a:hover{
+    color:goldenrod;
+}
+.category{
+    display:none;
+}
