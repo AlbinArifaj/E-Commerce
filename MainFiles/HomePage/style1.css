@@ -91,3 +91,7 @@
     left:150px;
     background-color: black;
 }
+
+.pa ul li.search-margin {
+    margin-left: 350px;
+}
