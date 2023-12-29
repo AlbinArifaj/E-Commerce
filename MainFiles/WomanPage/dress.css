@@ -48,7 +48,7 @@
 .col-md-4{
 
     display: inline-block;
-    float: left;
+    /* float: left; */
     height:460px;
     border: 1px solid rgba(0, 0, 0, .1);
     overflow-y: hidden;
