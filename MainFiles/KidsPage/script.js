@@ -7,9 +7,9 @@ function openPopup(){
   popup.classList.add('open-popup');
 }
 
-document.querySelector(".submitButton").addEventListener("click",function(event){
-  event.preventDefault();
-})
+// document.querySelector(".submitButton").addEventListener("click",function(event){
+//   event.preventDefault();
+// })
 
   let firstParagraph1 =  document.querySelectorAll(".linkToBuy");
   firstParagraph1.forEach(element=>{
@@ -23,11 +23,11 @@ document.querySelector(".submitButton").addEventListener("click",function(event)
         document.querySelector(".productName").innerHTML = elmentName;
         document.querySelector(".prductPrice").innerHTML = elementPrice;
 
-        elemtsForCart={
-          image:selectImage,
-          name:elmentName,
-          price:elementPrice
-        }
+        // elemtsForCart={
+        //   image:selectImage,
+        //   name:elmentName,
+        //   price:elementPrice
+        // }
 
         
      });
@@ -41,16 +41,9 @@ document.querySelector(".submitButton").addEventListener("click",function(event)
 
   }
 
-
-
-
-
-
-
 function initializeProductDetails(productDetailsArray) {
 
-
-
+  
 let currentProductIndex = -1; 
 
 document.addEventListener('DOMContentLoaded', function () {
