@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Lobster&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Lobster&family=Preahvihear&family=Vina+Sans&display=swap');
+.pa{
+    background-color: black;
+    height:80px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding 0 5px:
+}
+.pa ul{
+    list-style: none;
+    display: flex;
+}
+.pa ul li{
+    padding: 10px 30px;
+    position:relative
+}
+
+.pa ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+ h1 span{
+    color:#fff;
+    
+    font-size: 30px;
+ vertical-align:super;
+}
+
+.pa ul li a:hover{
+    color:goldenrod;
+}
+.category{
+    display:none;
+}
+
+.pa ul li:hover .category{
+    display:block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: black;
+}
+.pa ul li:hover .category ul{
+    display: block;
+    margin:10px;
+}
+
+.pa ul li:hover .category ul li{
+    width:160px;
+    padding: 10px;
+
+}
+
+.category-1{
+    display: none;
+}
+.category ul li:hover .category-1{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-2{
+    display: none;
+}
+.category ul li:hover .category-2{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-3{
+    display: none;
+}
+.category ul li:hover .category-3{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+
+.pa ul li.search-margin {
+    margin-left: 350px;
+}
+
+.pa ul li.emri{
+    margin-left: 550px;
+}
