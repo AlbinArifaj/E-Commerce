@@ -1,0 +1,115 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDFBF9;
+}
+
+
+.firstParagraph{
+    /* display: block; */
+    text-align: center;
+}
+
+.secondParagraph{
+    text-align: center;
+    opacity: 50%;
+
+}
+
+.informationAboutUs{
+    margin-top: 100px;
+}
+
+.emailCard{
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    position: relative;
+    align-items: center;
+    background-color: #f5efeb;
+    text-align: center;
+}
+
+.sendMail{
+    text-decoration: none;
+    color: black;
+}
+
+.sendMail:hover{
+    /* display:block; */
+    /* content: ''; */
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+
+}
+
+
+
+.ref::before {
+    
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    display: block;
+    inline-size: 700px;
+    margin-left: 400px;
+    content: "At RHEA, unparalleled customer support is the key driving  force that sets us apart in the realm of e-commerce platforms.";
+    /* white-space: pre; */
+}
+
+.talkToTeam{
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.peopleImages{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 200px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.peopleNames{
+    font-family: 'Montserrat', sans-serif;
+
+    display: inline-block;
+    margin-left: 250px;
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+h2.ff{
+    text-align: center;
+}
+  
+.lastParagraph{
+  text-align: center;
+}  
