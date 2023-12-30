@@ -44,13 +44,14 @@ function openPopup(){
 function initializeProductDetails(productDetailsArray) {
 
   
-let currentProductIndex = -1; 
+  let currentProductIndex = -1; 
 
 document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.linkToBuy').forEach(function (button, index) {
     button.addEventListener('click', function () {
       currentProductIndex = index;
+      console.log(index);
       openPopup();
     });
   });
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.productDetails').addEventListener('click', function () {
     if (currentProductIndex !== -1) {
       const modalBody = document.querySelector('.modal-body');
-
+      console.log(currentProductIndex);
       modalBody.innerHTML = '';
       const listElement = document.createElement('ul');
 
@@ -82,11 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 }
-
-
-
-
-
 function closePopup(){
   popup.classList.remove('open-popup');
   $('html').css('overflow-y','scroll');

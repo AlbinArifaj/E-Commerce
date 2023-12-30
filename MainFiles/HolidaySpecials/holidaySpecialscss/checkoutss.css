@@ -127,8 +127,8 @@
 
  .productDetails{
     border: none;
-    background-color: white;
-}  
+    color: red;
+ } 
  a {
     text-decoration: none;
     overflow-x: hidden;
@@ -216,7 +216,7 @@ a.help{
 }
 
 .popup img{
-    width: 500px;
+    width: 400px;
     margin-left: -800px;
     
 
@@ -274,12 +274,12 @@ a.help{
 .closePopupButton{
 
     opacity: 60%;
-   
-} 
+    
+ }  
 
 
 
-a {
+ a {
     text-decoration: none;
     overflow-x: hidden;
     overflow-y: hidden;
