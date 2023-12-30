@@ -1,14 +1,23 @@
-/* body {
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    height: 200vh;
     margin: 0;
-}
+  }
 
-canvas {
-    border: 1px solid #ffffff;
-}
+  canvas {
+    border: 1px solid #000;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
 
 
 body {
@@ -18,7 +27,7 @@ body {
   }
   .container {
     padding: 30px 0;
-  } */
+  }
   
   .table {
     margin: 20px auto;
@@ -77,43 +86,77 @@ body {
       }
     }
   }
+  a {
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  }
+  .logo {
+    text-align: center; 
+  }
   
+  .logo img {
+    margin: 0 auto;
+    align-items: center; 
+  }
   .fnd {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    background-color:#535a61;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 100px;
+    background-color:#282d32;
+
 }
 
 .fnd.fndi {
     border-radius: 5px;
     border: 1px solid #e3e3e3;
     padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a.help{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
 }
 a.about{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
+    
 }
+
+
 a.sign{
-    color: black;
+    color: white;
 }
 .fnd .fndi a {
     line-height: 24px;
     margin-bottom: 20px;
+
 }
 h2.ff{
     text-align: center;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
 }
   
-.lastParagraph{
-  text-align: center;
-}  
+.entireParagraph{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  
+  
