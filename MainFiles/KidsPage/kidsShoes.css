@@ -130,4 +130,9 @@
     border: none;
     background-color: white;
 }  
+svg{
+    display: block;
+   margin: auto;
+   margin-top: -25px;
+}
 
