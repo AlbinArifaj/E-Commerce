@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
   }
   .container {
     padding: 30px 0;
-  }
+  } */
   
   .table {
     margin: 20px auto;
@@ -77,3 +77,43 @@ body {
       }
     }
   }
+  
+  .fnd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color:#535a61;
+}
+
+.fnd.fndi {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+a.help{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.about{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a.sign{
+    color: black;
+}
+.fnd .fndi a {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+h2.ff{
+    text-align: center;
+}
+  
+.lastParagraph{
+  text-align: center;
+}  
