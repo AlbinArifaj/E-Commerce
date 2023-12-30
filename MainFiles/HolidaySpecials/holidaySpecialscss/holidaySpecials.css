@@ -113,9 +113,7 @@ a{
     border-top: 1px dotted darkred;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
-.popupp h3{
-    font-size: 38px;
-    font-weight: 500;
+.popupp h4{
     margin: 30px 0 10px;
 }
 #okay_btn{
