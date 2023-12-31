@@ -133,7 +133,7 @@
 
                     <img class="productImage"  src="/KidsImages/kidsJacketsCoats/imageedit_20_8107405460.png">
                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                    <form class="formDetails" >
+                    <form id="formDetails" class="formDetails" >
                          <div class="allInfo">
                             <p class="productName">AAA</p>
                             <p class="ref">XYZ</p>
@@ -144,7 +144,7 @@
                                 <option name="m">M</option>
                                 <option name="l">L</option>
                             </select>
-                            <input class="submitButton" type="submit"  value="Click & Collect">
+                            <input class="submitButton" type="submit" onclick="clickandCollect()"    value="Click & Collect">
                             <button type="button" class="productDetails btn-demo" data-toggle="modal" data-target="#myModal2"> Product Details</button>
                             </div>
                     </form>
@@ -176,6 +176,9 @@
               </div>
             </div>
           </div>
+
+          <button onclick="viewCart()">View Cart</button>
+
           <script src="/MainFiles/KidsPage/script.js"></script> 
           <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 

@@ -21,15 +21,7 @@ function openPopup(){
 
         document.querySelector(".productImage").src=selectImage;
         document.querySelector(".productName").innerHTML = elmentName;
-        document.querySelector(".prductPrice").innerHTML = elementPrice;
-
-        // elemtsForCart={
-        //   image:selectImage,
-        //   name:elmentName,
-        //   price:elementPrice
-        // }
-
-        
+        document.querySelector(".prductPrice").innerHTML = elementPrice;  
      });
   }); 
   function addToCart(){
@@ -93,13 +85,19 @@ myForm.addEventListener('submit', function(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
 });
+let cart = JSON.parse(localStorage.getItem('cart'));
+console.log("Card before init" + cart);
+if (cart.length === 0){
+  cart = [];
+  console.log("Card after init" + cart);
 
-let cart=[];
+}
 
-function addToCart(productName, price) {
-  const cartItem = { name: productName, price: price };
+
+function addToCart(productName, price, img) {
+  const cartItem = { name: productName, price: price, img: img };
   cart.push(cartItem);
-  console.log(cart);
+  console.log(cart)
   
   // Optionally, you can display an alert or update the UI to notify the user
   alert(`${productName} added to cart!`);
@@ -119,14 +117,15 @@ document.addEventListener('click', function(event){
   if (event.target.classList.contains('submitButton')) {
 
 const getParagrah = document.querySelector(".productName").innerHTML;
-console.log(getParagrah);
 const getPrice = document.querySelector(".prductPrice").innerHTML;
-console.log(getPrice);
-
-addToCart(getParagrah,getPrice)
+const getImage = document.querySelector(".productImage").src;
+addToCart(getParagrah,getPrice, getImage)
   }
 })
-// }
+
+
+
+
 function closePopup(){
   popup.classList.remove('open-popup');
   $('html').css('overflow-y','scroll');
