@@ -83,6 +83,50 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 }
+
+
+
+const myForm = document.getElementById('formDetails');
+
+// Attach the event listener to the form
+myForm.addEventListener('submit', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+});
+
+let cart=[];
+
+function addToCart(productName, price) {
+  const cartItem = { name: productName, price: price };
+  cart.push(cartItem);
+  console.log(cart);
+  
+  // Optionally, you can display an alert or update the UI to notify the user
+  alert(`${productName} added to cart!`);
+}
+
+function viewCart() {
+  // Save the cart to localStorage for use in the cart page
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Navigate to the cart page
+  window.location.href = '/MainFiles/Cart/cart.html';
+}
+
+// function clickandCollect(){
+
+document.addEventListener('click', function(event){
+  if (event.target.classList.contains('submitButton')) {
+
+const getParagrah = document.querySelector(".productName").innerHTML;
+console.log(getParagrah);
+const getPrice = document.querySelector(".prductPrice").innerHTML;
+console.log(getPrice);
+
+addToCart(getParagrah,getPrice)
+  }
+})
+// }
 function closePopup(){
   popup.classList.remove('open-popup');
   $('html').css('overflow-y','scroll');
