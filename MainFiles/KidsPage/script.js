@@ -21,15 +21,7 @@ function openPopup(){
 
         document.querySelector(".productImage").src=selectImage;
         document.querySelector(".productName").innerHTML = elmentName;
-        document.querySelector(".prductPrice").innerHTML = elementPrice;
-
-        // elemtsForCart={
-        //   image:selectImage,
-        //   name:elmentName,
-        //   price:elementPrice
-        // }
-
-        
+        document.querySelector(".prductPrice").innerHTML = elementPrice;  
      });
   }); 
   function addToCart(){
@@ -83,6 +75,57 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 }
+
+
+
+const myForm = document.getElementById('formDetails');
+
+// Attach the event listener to the form
+myForm.addEventListener('submit', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+});
+let cart = JSON.parse(localStorage.getItem('cart'));
+console.log("Card before init" + cart);
+if (cart.length === 0){
+  cart = [];
+  console.log("Card after init" + cart);
+
+}
+
+
+function addToCart(productName, price, img) {
+  const cartItem = { name: productName, price: price, img: img };
+  cart.push(cartItem);
+  console.log(cart)
+  
+  // Optionally, you can display an alert or update the UI to notify the user
+  alert(`${productName} added to cart!`);
+}
+
+function viewCart() {
+  // Save the cart to localStorage for use in the cart page
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Navigate to the cart page
+  window.location.href = '/MainFiles/Cart/cart.html';
+}
+
+// function clickandCollect(){
+
+document.addEventListener('click', function(event){
+  if (event.target.classList.contains('submitButton')) {
+
+const getParagrah = document.querySelector(".productName").innerHTML;
+const getPrice = document.querySelector(".prductPrice").innerHTML;
+const getImage = document.querySelector(".productImage").src;
+addToCart(getParagrah,getPrice, getImage)
+  }
+})
+
+
+
+
 function closePopup(){
   popup.classList.remove('open-popup');
   $('html').css('overflow-y','scroll');
