@@ -14,6 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <style>
+      *{
+        font-family: 'Montserrat', sans-serif;
+      }
        
         section {
             margin-left: 55px;
@@ -80,11 +83,11 @@
             <button class="btn btn-lg btn-primary gray-layered-btn" id="dior_btn" onclick="openPopupp()">
                 <p style="color:rgb(183, 183, 182)" id="text-to-change" class="original-text" onmouseover="changeText()" onmouseout="resetText(this)">Order Dior's Advent Calendar</p>
             </button>
-            <div class="popupp" id="popupp">
-              <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/check_btn-removebg.png" alt="Check">
+            <div class="popupp special" id="popupp">
+              <!-- <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/check_btn-removebg.png" alt="Check"> -->
               <h4>Type the code below for a 25% discount</h4>
               <br>
-              <br>
+              
               <h5>cdjn-4567-8930</h5>
               <button class="btn btn-md"  onclick="closePopupp()" id="okay_btn">Okay</button>
             </div>
@@ -116,8 +119,30 @@
     </article>
     <br>
     <br>
-    <article style="text-align: center;" > 
-        <h2 id="van_cleef" style="color:whitesmoke; position:relative; z-index:1;">
+    <section>
+      <div class="row">
+        <div class="col-md-4">
+          <a class="linkToBuy" onclick="openPopup()">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/hermes_purse.jpg" alt="Hermes Purse" style="width:550px" class="card">
+        </a>
+        </div>
+        <div class="col-md-4">
+          <a class="linkToBuy" onclick="openPopup()">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/amuletes_constance_pendant.jpg" alt="Hemres pendant" class="hermes_ad" id="pendant" class="card"></a>
+          <a class="linkToBuy" onclick="openPopup()">
+          <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/H_long_sleeve_cardigan.jpg" alt="Long sleeve cardigan from hermes" class="hermes_ad" style="margin-top: -1376px; margin-left:250px" class="card"></a>
+          </div>
+          <div class="col-md-4"> 
+            <a class="linkToBuy" onclick="openPopup()">
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/helia_60_sandal.jpg" alt="Helia 60 sandal" class="hermes_ad" style="margin-left:75px" class="card"></a>
+            <a class="linkToBuy" onclick="openPopup()">
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/davis_h_sellier_cap.jpg" alt="Davis Hellier cap from Hermes" class="hermes_ad" style="margin:50px 50px 0px 75px" class="card"></a>
+            </div>
+      </div>
+    </section>
+   
+    <article style="text-align: center; margin-top: -150px;" > 
+        <h2 id="van_cleef" style="color:whitesmoke; position:relative;">
               7 on SALE 
           </h2>
           
@@ -128,7 +153,7 @@
   
   <div class="container-fluid">
     <div  class="row">
-        <div class="col-md-4 ">
+        <div class="col-md-4 cl4">
             <a class="linkToBuy" onclick="openPopup()">
             <img alt="Balenciaga ski" class="pImage"
             src="/MainFiles/HolidaySpecials/holidayspecialsIMG/ProductsIMGS/helmet-in-black-eps-and-abs-balenc-woutbg.png">
@@ -137,7 +162,7 @@
             <p class="goToProduct">Go To Product</p>
         </a>
         </div>
-        <div class="col-md-4 " >
+        <div class="col-md-4 cl4"  >
             <a class="linkToBuy"  onclick="openPopup()">
                 <img alt="cardigan" class="pImage" src="/MainFiles/HolidaySpecials/holidayspecialsIMG/ProductsIMGS/nappa-leather-jacket-prada-woutbg.png">
                 <p class="firstParagraph">Nappa Leather Jacket - Prada</p>

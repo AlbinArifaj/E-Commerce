@@ -1,9 +1,9 @@
-body {
+/* body {
     /* background-image: url('Img1.jpg');
     background-size: cover; */
-    margin: 0;
+    /* margin: 0; */
     /* padding: 10px; */
-}
+/* } */ 
 
 #epara{
     color: black;
@@ -26,16 +26,16 @@ font-size: 40px;
 }
 
 
-#carouselExample{
+/* #carouselExample{
     width: 100%;
     margin-top: -100px;
     box-sizing: border-box;
     overflow-y: hidden;
     overflow-x: hidden;
     /* overflow: hidden; */
-    max-height: 100%;
+    /* max-height: 100%; */
     /* height: 200px; */
-}
+
 
 
 div h3{

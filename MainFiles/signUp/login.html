@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/MainFiles/signUp/signUp.css">
+
+    <link rel="stylesheet" href="/MainFiles/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: url('/MainFiles/signUp/background-for-sign-up.png') repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background: linear-gradient(45deg, #e9f6ff, #e9f6ff);
+            background-position: center center;
+        }
+
+        .customF {
+
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+
+                <form class="customF" onsubmit="return validateLogin()">
+                    <h2 class="mb-4 text-left">Login</h2>
+
+                    <div class="form-group">
+                        <label for="loginEmail">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+
+                    <p class="mt-3">Don't have an account? <a href="signup.html" target="_blank">Sign Up</a></p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var users = JSON.parse(localStorage.getItem('users')) || []; // e thirrim array
+        function validateLogin() {
+            var enteredEmail = document.getElementById('loginEmail').value;
+            var enteredPassword = document.getElementById('loginPassword').value;
+
+            // i marrim user info prej localStorage
+            var users = JSON.parse(localStorage.getItem('users')) || [];
+
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].email === enteredEmail && users[i].password === enteredPassword) {
+                    alert('Login successful');
+                    return true;
+                }
+            }
+            console.log(users);
+            alert('Login failed. Please check your email and password.');
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

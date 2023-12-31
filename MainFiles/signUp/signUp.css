@@ -2,7 +2,8 @@ body {
     background: url('/MainFiles/signUp/background-for-sign-up.png') repeat;
     background-size: cover;
     background-attachment: fixed;
-    background: linear-gradient(45deg, #d2edff, #d2edff);
+    background: linear-gradient(45deg, #e9f6ff, #e9f6ff);
+    background-position: center center;
 }
 
 .costumF {
