@@ -38,34 +38,7 @@
             font-weight: bold;
         }
     </style>
-    <script>
-        // password strength check
-        document.getElementById('password').addEventListener('input', function () {
-            var password = this.value;
-            var strength = 'Weak';
-            var color = 'red';
-
-            if (password.length >= 8) {
-                strength = 'Medium';
-                color = 'orange';
-            }
-
-            if (password.length >= 12) {
-                strength = 'Strong';
-                color = 'green';
-            }
-
-            document.getElementById('passwordStrength').textContent = 'Password Strength: ' + strength;
-            document.getElementById('passwordStrength').style.color = color;
-
-            // Show warning for weak passwords
-            var warning = document.getElementById('passwordError');
-            warning.textContent = '';
-            if (password.length > 0 && password.length < 8) {
-                warning.textContent = 'Password is too weak.';
-            }
-        });
-    </script>
+   
 </head>
 
 <body>
@@ -154,6 +127,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/MainFiles/signUp/passwordtrycatch.js"></script>
     <script>
+         
+        // password strength check
+        document.getElementById('password').addEventListener('input', function () {
+            var password = this.value;
+            var strength = 'Weak';
+            var color = 'red';
+
+            if (password.length >= 8) {
+                strength = 'Medium';
+                color = 'orange';
+            }
+
+            if (password.length >= 12) {
+                strength = 'Strong';
+                color = 'green';
+            }
+
+            document.getElementById('passwordStrength').textContent = 'Password Strength: ' + strength;
+            document.getElementById('passwordStrength').style.color = color;
+
+            // Show warning for weak passwords
+            var warning = document.getElementById('passwordError');
+            warning.textContent = '';
+            if (password.length > 0 && password.length < 8) {
+                warning.textContent = 'Password is too weak.';
+            }
+        });
+   
+
+        
     var users = JSON.parse(localStorage.getItem('users')) || []; // inicializimi i array
 function User(fullName, gender, email, password, confirmPassword, creditCard, expirationDate, cvv, newsletter) {
     this.fullName = fullName;
