@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = item.img;
         row.insertCell(0)
         .appendChild(img);
-        row.insertCell(1).textContent = item.name;
+        row.insertCell(1).textContent = item.productName ;
         row.insertCell(2).textContent = item.price;
         // let price = item.price.slice(0,-1);
         let price =parseInt(item.price);

@@ -102,6 +102,7 @@ function addToCart(productName, price, img) {
 
   // userCart
   const cartItem = new CartItem(productName,price,img);
+  console.log("productName"+cartItem.productName)
   // const cartItem = { name: productName, price: price, img: img };
   // cart.push(cartItem);
   userCart.push(cartItem)
