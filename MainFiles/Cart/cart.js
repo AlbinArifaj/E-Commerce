@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var table = document.createElement("table");
     var thead = document.createElement("thead");
     var headerRow = thead.insertRow();
-    var headers = ["Image", "Product Name", "Price"];
+    var headers = ["Product Image", "Product Name", "Price"];
     headers.forEach(function(header) {
       var th = document.createElement("th");
       th.textContent = header;
