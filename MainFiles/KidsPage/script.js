@@ -90,12 +90,19 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 //   console.log("Card after init" + cart);
 
 // }
+function CartItem(productName,price,img){
+  this.productName =productName;
+  this.price =price;
+  this.img= img;
+}
+
 
 
 function addToCart(productName, price, img) {
 
   // userCart
-  const cartItem = { name: productName, price: price, img: img };
+  const cartItem = new CartItem(productName,price,img);
+  // const cartItem = { name: productName, price: price, img: img };
   // cart.push(cartItem);
   userCart.push(cartItem)
   // cart.push(cartItem);

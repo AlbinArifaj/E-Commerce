@@ -27,17 +27,15 @@ try {
         throw "Passwords do not match";
     }
 
+
+    let cvvValue = Number(cvv);
+    if(Number.isNaN(cvvValue)){
+        throw "Cvv is Not Valid";
+    }
+    
+
     // Objekti per user
-    var user = {
-        fullName: fullName,
-        gender: gender,
-        email: email,
-        password: password,
-        creditCard: creditCard,
-        expirationDate: expirationDate,
-        cvv: cvv,
-        newsletter: newsletter
-    };
+    var user = new User( fullName, gender, email, password, creditCard, expirationDate, cvv, newsletter, new Date());
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
     loginUser(user.email);
@@ -49,8 +47,6 @@ try {
 }
 return true;
 }
-
-
 
 
 function loginUser(email) {
