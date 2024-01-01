@@ -13,20 +13,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"></script> -->
+
     <title>Kids</title>
 
 
    
 </head>
 <body class="finalStep">
-
-
+    <!-- <div class="pa">
+        <nav  class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RHAE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Women
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">SNEAKERS</a></li>
+                      <li><a class="dropdown-item" href="#">HOODIES</a></li>
+                      <li><a class="dropdown-item" href="#">SHIRTS</a></li>
+                    </ul>
+                  </li>
+        
+        
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Men
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">SNEAKERS</a></li>
+                      <li><a class="dropdown-item" href="#">HOODIES</a></li>
+                      <li><a class="dropdown-item" href="#">SHIRTS</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kids
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">SNEAKERS</a></li>
+                      <li><a class="dropdown-item" href="#">HOODIES</a></li>
+                      <li><a class="dropdown-item" href="#">SHIRTS</a></li>
+                    </ul>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                <!-- </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>  -->
+    <!-- </div> -->
 
 
     <div class="container-fluid">
         <div  class="row">
             <div class="col-md-4">
-                <a class="linkToBuy" onclick="openPopup()">
+                <a class="linkToBuy" onclick="openPopup()" >
                 <img alt="NikeShoes" class="firstImage" src="/KidsImages/imageedit_4_9774925683.png">
                 <p id="firstOne" class=" firstParagraph">Air Jordan 3 Retro </p>
                 <p class="qmimi">150$</p>
@@ -130,7 +191,7 @@
 
                     <img  class="productImage" src="/KidsImages/imageedit_1_3949189767.png">
                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                    <form class="formDetails" >
+                    <form class="formDetails" id="formDetails" >
                     <div class="allInfo">
                     <p class="productName">AAA</p>
                     <p class="ref">XYZ</p>
@@ -141,7 +202,7 @@
                         <option name="m">M</option>
                         <option name="l">L</option>
                     </select>
-                    <input class="submitButton" type="submit"  value="Click & Collect">
+                    <input class="submitButton" type="submit"   value="Click & Collect">
                     <button type="button" class="productDetails btn-demo" data-toggle="modal" data-target="#myModal2"> Product Details</button>
                 </form>
                 </div>
@@ -150,7 +211,7 @@
           </div>
 
 
-          <div class="container demo">
+          <div  class="container demo">
             <div class="text-center">
             </div>
             <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
@@ -173,6 +234,9 @@
               </div>
             </div>
           </div>
+
+          <button onclick="viewCart()">View Cart</button>
+
           
           <script src="/MainFiles/KidsPage/script.js"></script> 
           <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
@@ -182,16 +246,24 @@
 " Air Jordan 3 Retro\n   - Color Options: Black/Cement Grey, White/Fire Red\n   - Upper Material: Premium leather and synthetic materials\n   - Midsole: Visible Air-Sole unit for responsive cushioning\n   - Outsole: Solid rubber with circular traction pattern\n   - Best For: Basketball and casual wear\n   - Special Feature: First introduced in 1988, designed by Tinker Hatfield.",
 
 " LeBron XXI SE 'Movie Night'\n   - Color Options: Purple/Gold, Black/Metallic Silver\n   - Upper Material: KnitPosite construction for lightweight support\n   - Midsole: Full-length Zoom Air unit for maximum impact protection\n   - Outsole: Translucent rubber with traction pods\n   - Best For: Basketball and lifestyle\n   - Special Feature: Inspired by LeBron James' passion for movies and entertainment.",
+" Air Jordan 3 Retro\n   - Color Options: Black/Cement Grey, White/Fire Red\n   - Upper Material: Premium leather and synthetic materials\n   - Midsole: Visible Air-Sole unit for responsive cushioning\n   - Outsole: Solid rubber with circular traction pattern\n   - Best For: Basketball and casual wear\n   - Special Feature: First introduced in 1988, designed by Tinker Hatfield.",
 
-" Ja 1 'Backyard BBQ'\n   - Color Options: Red/Black/White\n   - Upper Material: Premium suede and canvas\n   - Midsole: Encapsulated Air unit for cushioning\n   - Outsole: Rubber cupsole with circular tread pattern\n   - Best For: Casual wear and urban exploration\n   - Special Feature: Limited edition release inspired by summer BBQ vibes.",
+" LeBron XXI SE 'Movie Night'\n   - Color Options: Purple/Gold, Black/Metallic Silver\n   - Upper Material: KnitPosite construction for lightweight support\n   - Midsole: Full-length Zoom Air unit for maximum impact protection\n   - Outsole: Translucent rubber with traction pods\n   - Best For: Basketball and lifestyle\n   - Special Feature: Inspired by LeBron James' passion for movies and entertainment.",
 
-" Nike Air Force 1 LE\n   - Color Options: White/White, Black/Black\n   - Upper Material: Full-grain leather\n   - Midsole: Air-Sole unit for lightweight cushioning\n   - Outsole: Non-marking rubber with pivot points\n   - Best For: Streetwear and everyday use\n   - Special Feature: Originally released in 1982 as a basketball shoe, now an iconic lifestyle sneaker.",
+" Air Jordan 3 Retro\n   - Color Options: Black/Cement Grey, White/Fire Red\n   - Upper Material: Premium leather and synthetic materials\n   - Midsole: Visible Air-Sole unit for responsive cushioning\n   - Outsole: Solid rubber with circular traction pattern\n   - Best For: Basketball and casual wear\n   - Special Feature: First introduced in 1988, designed by Tinker Hatfield.",
 
-" Nike Dunk Low\n   - Color Options: University Red/White, Pine Green/Black\n   - Upper Material: Leather and synthetic overlays\n   - Midsole: EVA foam for cushioning\n   - Outsole: Rubber with classic pivot point\n   - Best For: Skateboarding and street style\n   - Special Feature: Classic silhouette that gained popularity in the skateboarding community.",
+" LeBron XXI SE 'Movie Night'\n   - Color Options: Purple/Gold, Black/Metallic Silver\n   - Upper Material: KnitPosite construction for lightweight support\n   - Midsole: Full-length Zoom Air unit for maximum impact protection\n   - Outsole: Translucent rubber with traction pods\n   - Best For: Basketball and lifestyle\n   - Special Feature: Inspired by LeBron James' passion for movies and entertainment.",
 
-" Air Jordan 1 Mid SE\n   - Color Options: Black/White/Gym Red, Pine Green/White\n   - Upper Material: Genuine and synthetic leather\n   - Midsole: Encapsulated Air-Sole unit for comfort\n   - Outsole: Solid rubber with pivot point\n   - Best For: Basketball-inspired fashion\n   - Special Feature: Mid-top version of the iconic Air Jordan 1 silhouette.",
+" Air Jordan 3 Retro\n   - Color Options: Black/Cement Grey, White/Fire Red\n   - Upper Material: Premium leather and synthetic materials\n   - Midsole: Visible Air-Sole unit for responsive cushioning\n   - Outsole: Solid rubber with circular traction pattern\n   - Best For: Basketball and casual wear\n   - Special Feature: First introduced in 1988, designed by Tinker Hatfield.",
 
-" Air Jordan 1 Low\n   - Color Options: Black/Toe/Red, White/Black/Gym Red\n   - Upper Material: Premium full-grain leather\n   - Midsole: Air-Sole unit in the heel\n   - Outsole: Rubber with circular tread pattern\n   - Best For: Casual wear and versatility\n   - Special Feature: Low-top variation of the iconic Air Jordan 1 design."
+" LeBron XXI SE 'Movie Night'\n   - Color Options: Purple/Gold, Black/Metallic Silver\n   - Upper Material: KnitPosite construction for lightweight support\n   - Midsole: Full-length Zoom Air unit for maximum impact protection\n   - Outsole: Translucent rubber with traction pods\n   - Best For: Basketball and lifestyle\n   - Special Feature: Inspired by LeBron James' passion for movies and entertainment.",
+
+" Air Jordan 3 Retro\n   - Color Options: Black/Cement Grey, White/Fire Red\n   - Upper Material: Premium leather and synthetic materials\n   - Midsole: Visible Air-Sole unit for responsive cushioning\n   - Outsole: Solid rubber with circular traction pattern\n   - Best For: Basketball and casual wear\n   - Special Feature: First introduced in 1988, designed by Tinker Hatfield.",
+
+" LeBron XXI SE 'Movie Night'\n   - Color Options: Purple/Gold, Black/Metallic Silver\n   - Upper Material: KnitPosite construction for lightweight support\n   - Midsole: Full-length Zoom Air unit for maximum impact protection\n   - Outsole: Translucent rubber with traction pods\n   - Best For: Basketball and lifestyle\n   - Special Feature: Inspired by LeBron James' passion for movies and entertainment.",
+
+
+
 ];
 
 initializeProductDetails(productDetailsArray)

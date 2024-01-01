@@ -12,19 +12,19 @@ video {
 #video-container{
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 .text-over{
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
     text-align: center;
+    padding-bottom: 20px;
 }
 button{
     background-color: transparent !important;
     border-color: #777 !important;
-    padding-bottom: 0.1% !important;
 }
 p{
     color:white;
@@ -79,12 +79,12 @@ a{
         transparent 40%
     );
     border-radius: inherit;
-    margin: inherit;
+    margin-bottom: inherit;
 }
 .popupp{
     
     width: 350px ;
-    height: 250px ;
+    height: 270px ;
     background-color: rgba(203, 194, 194, 0.725) ;
     border-radius: 6px ;
     position: relative  ;
@@ -113,16 +113,15 @@ a{
     border-top: 1px dotted darkred;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
-.popupp h3{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
+.popupp h4{
+   margin-top: 80px;
 }
 #okay_btn{
     background-color: darkred !important;
     color: white !important;
     z-index: -1 !important;
     padding-bottom: 10px !important;
+    margin-bottom: 20px !important;
    
 }
 
