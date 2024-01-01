@@ -42,7 +42,7 @@
         <div class="row">
             <div class="col-md-6">
 
-                <form class="customF" onsubmit="return validateLogin()">
+                <form class="customF" action="/MainFiles/HomePage/index1.html" onsubmit="return validateLogin()">
                     <h2 class="mb-4 text-left">Login</h2>
 
                     <div class="form-group">
@@ -80,8 +80,11 @@
             for (var i = 0; i < users.length; i++) {
                 if (users[i].email === enteredEmail && users[i].password === enteredPassword) {
                     alert('Login successful');
-                    return true;
-                }
+                    localStorage.setItem('loggedInUserEmail', users[i].email);
+                    console.log(email)
+                    let userCart = JSON.parse(localStorage.getItem(users[i].email + '_cart')) || [];
+                    localStorage.setItem('cart', JSON.stringify(userCart));
+                    }
             }
             console.log(users);
             alert('Login failed. Please check your email and password.');

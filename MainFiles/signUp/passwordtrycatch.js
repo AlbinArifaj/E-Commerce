@@ -38,15 +38,24 @@ try {
         cvv: cvv,
         newsletter: newsletter
     };
-
-    // Add user ne array
     users.push(user);
-    console.log(users); // array ne console behet print
+    localStorage.setItem('users', JSON.stringify(users));
+    loginUser(user.email);
 
+    console.log(users.password); // array ne console behet print
 } catch (error) {
     document.getElementById('passwordError').textContent = error;
     return false;
 }
-
 return true;
+}
+
+
+
+
+function loginUser(email) {
+  localStorage.setItem('loggedInUserEmail', email);
+  console.log(email)
+  let userCart = JSON.parse(localStorage.getItem(email + '_cart')) || [];
+  localStorage.setItem('cart', JSON.stringify(userCart));
 }
