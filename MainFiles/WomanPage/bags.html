@@ -24,8 +24,6 @@
 </head>
 <body class="finalStep">
     <div class="slideshow-container1">
-
-       
         <div class="mySlides fade">
           <img src="/ImagesWoman/ImgBags/front_Page_Bags.jpg" style="width:100% ">
           <div class="text">Caption Text</div>
@@ -157,8 +155,9 @@ function showSlides() {
         
     </div>
 
+    <div id="footer"></div>
 
-    <div class="fnd">
+    <!-- <div class="fnd">
         <div class="fndi">
         <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
             <a href="#" class="help">Our Client Services are available<br> for call
@@ -191,7 +190,7 @@ function showSlides() {
                 <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Email Sign-Up  </h2>
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
-        </div>
+        </div> -->
 
 
         <div class="container">
@@ -200,7 +199,7 @@ function showSlides() {
 
                     <img  class="productImage" src="/KidsImages/imageedit_1_3949189767.png">
                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                    <form class="formDetails" >
+                    <form id="formDetails"  class="formDetails" >
                     <div class="allInfo">
                     <p class="productName">AAA</p>
                     <p class="ref">XYZ</p>
@@ -260,6 +259,8 @@ function showSlides() {
           " DIRO BOOK TOTE \n -Introduced by Maria Grazia Chiuri.\n -Creative Director of Christian Dior, the Dior Book Tote has become a staple of the Dior aesthetic.\n  -Adorned with the Christian Dior Paris signature on the front.\n  - gold-tone Butterfly Zodiac motif by Pietro Ruffo.\n -The bag’s large size can accommodate a 15-inch laptop, a pouch, a wallet, a phone, sunglasses and lipstick."]
 
 initializeProductDetails(productDetailsArray)
+$('#footer').load('/MainFiles/footer.html');
+
 
           </script>
 

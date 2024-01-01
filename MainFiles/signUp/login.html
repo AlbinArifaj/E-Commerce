@@ -42,7 +42,7 @@
         <div class="row">
             <div class="col-md-6">
 
-                <form class="customF" onsubmit="return validateLogin()">
+                <form class="customF" action="/MainFiles/HomePage/index1.html" onsubmit="return validateLogin()">
                     <h2 class="mb-4 text-left">Login</h2>
 
                     <div class="form-group">
@@ -76,16 +76,35 @@
 
             // i marrim user info prej localStorage
             var users = JSON.parse(localStorage.getItem('users')) || [];
+            
+            let foundUser = users.filter(user => user.email === enteredEmail && user.password === enteredPassword)[0]; 
+            console.log("FoundUSer:"+foundUser);
+            if( foundUser !== undefined && foundUser !== null){
+                alert('Login successful');                    
+                    localStorage.setItem('loggedInUserEmail', foundUser.email);
+                    console.log(foundUser.email)
+                    let userCart = JSON.parse(localStorage.getItem(foundUser.email + '_cart')) || [];
+                    localStorage.setItem('cart', JSON.stringify(userCart));
 
-            for (var i = 0; i < users.length; i++) {
-                if (users[i].email === enteredEmail && users[i].password === enteredPassword) {
-                    alert('Login successful');
-                    return true;
-                }
-            }
-            console.log(users);
+            }else{
+
+            // for (var i = 0; i < users.length; i++) {
+            //     if (users[i].email === enteredEmail && users[i].password === enteredPassword) {
+            //         alert('Login successful');
+                    
+                    
+                    
+                    
+            //         localStorage.setItem('loggedInUserEmail', users[i].email);
+            //         console.log(email)
+            //         let userCart = JSON.parse(localStorage.getItem(users[i].email + '_cart')) || [];
+            //         localStorage.setItem('cart', JSON.stringify(userCart));
+            //         }
+            // }
+            // console.log(users);
             alert('Login failed. Please check your email and password.');
             return false;
+            }
         }
     </script>
 

@@ -71,9 +71,10 @@
         </div>
         
     </div>
-    
+    <div id="footer"></div>
 
 
+<!-- 
     <div class="fnd">
         <div class="fndi">
         <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
@@ -105,7 +106,7 @@
                 </div>
         </div>
         
-        
+         -->
 
         <div class="container">
 
@@ -113,7 +114,7 @@
 
                     <img class="productImage"  src="/ImagesWoman/casual/boucle_mohair_miniskirt.png">
                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                    <form class="formDetails" >
+                    <form id="formDetails" class="formDetails" >
                     <div class="allInfo">
                     <p class="productName">AAA</p>
                     <p class="ref">XYZ</p>
@@ -165,4 +166,9 @@
           <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 
 </body>
+
+<script>
+                                $('#footer').load('/MainFiles/footer.html');
+
+</script>
 </html>

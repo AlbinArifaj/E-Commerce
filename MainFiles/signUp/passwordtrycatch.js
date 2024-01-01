@@ -27,26 +27,31 @@ try {
         throw "Passwords do not match";
     }
 
+
+    let cvvValue = Number(cvv);
+    if(Number.isNaN(cvvValue)){
+        throw "Cvv is Not Valid";
+    }
+    
+
     // Objekti per user
-    var user = {
-        fullName: fullName,
-        gender: gender,
-        email: email,
-        password: password,
-        creditCard: creditCard,
-        expirationDate: expirationDate,
-        cvv: cvv,
-        newsletter: newsletter
-    };
-
-    // Add user ne array
+    var user = new User( fullName, gender, email, password, creditCard, expirationDate, cvv, newsletter, new Date());
     users.push(user);
-    console.log(users); // array ne console behet print
+    localStorage.setItem('users', JSON.stringify(users));
+    loginUser(user.email);
 
+    console.log(users.password); // array ne console behet print
 } catch (error) {
     document.getElementById('passwordError').textContent = error;
     return false;
 }
-
 return true;
+}
+
+
+function loginUser(email) {
+  localStorage.setItem('loggedInUserEmail', email);
+  console.log(email)
+  let userCart = JSON.parse(localStorage.getItem(email + '_cart')) || [];
+  localStorage.setItem('cart', JSON.stringify(userCart));
 }

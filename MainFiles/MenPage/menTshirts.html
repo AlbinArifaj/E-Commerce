@@ -89,7 +89,9 @@
         
     </div>
 
-    <div class="fnd">
+    <div id="footer"></div>
+
+    <!-- <div class="fnd">
         <div class="fndi">
         <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
             <a href="#" class="help">Our Client Services are available<br> for call
@@ -123,14 +125,14 @@
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
         </div>
-       
+        -->
                         <div class="container">
 
                             <div class="popup" id="popup">
                 
                                     <img  class="productImage" src="/ImagesMen/TshirtsImages/Medium-764235TPVU41569_F.jpg">
                                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                                    <form class="formDetails" >
+                                    <form id="formDetails"  class="formDetails" >
                                     <div class="allInfo">
                                     <p class="productName">AAA</p>
                                     <p class="ref">XYZ</p>
@@ -197,6 +199,8 @@
                             ];
                         
                             initializeProductDetails(productDetailsArray);
+                            $('#footer').load('/MainFiles/footer.html');
+
                         </script>
                         
 </body>

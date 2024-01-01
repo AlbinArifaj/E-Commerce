@@ -146,7 +146,9 @@
     </div>
     
 <!--Footer-->
+        <div id="footer"></div>
 
+<!-- 
     <div class="fnd">
         <div class="fndi">
         <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
@@ -180,7 +182,7 @@
                 <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Email Sign-Up  </h2>
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
-        </div>
+        </div> -->
         
         <!--Product popup-->
 
@@ -215,7 +217,7 @@
     
                         <img class="productImage"  src="/ImagesWoman/ImgBags/ImgDress/cut_out_maxi_balenciaga.png">
                         <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                        <form class="formDetails" >
+                        <form id="formDetails"  class="formDetails" >
                         <div class="allInfo">
                         <p class="productName">AAA</p>
                         <p class="ref">XYZ</p>
@@ -278,6 +280,8 @@
            " FIN FLOUNCE JACQUARD DRESS \n -Romantic textures elevate this clean-cut dress with the collection’s fantastical aquatic spirit.\n -Cut in a classic A-line silhouette from a silk-blend jacquard detailed with an intricate coral motif in relief.\n -Main Material : 77% Polyester, 13% Silk, 10% Polyamide "]
  
  initializeProductDetails(productDetailsArray)
+ $('#footer').load('/MainFiles/footer.html');
+
  
            </script>
 </body>

@@ -82,7 +82,10 @@
   
     </div>
 
-    <div class="fnd">
+    <div id="footer"></div>
+
+
+    <!-- <div class="fnd">
         <div class="fndi">
             
         <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Help</h2>
@@ -117,7 +120,7 @@
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
         </div>
-        
+         -->
         
     
         <div class="container">
@@ -137,7 +140,7 @@
                         <option name="m">M</option>
                         <option name="l">L</option>
                     </select>
-                    <input class="submitButton" type="submit" onclick="clickandCollect()"  value="Click & Collect">
+                    <input class="submitButton" type="submit" value="Click & Collect">
                     <button type="button" class="productDetails btn-demo" data-toggle="modal" data-target="#myModal2"> Product Details</button>
                 </form>
                 </div>
@@ -188,6 +191,7 @@
 ];
 
 initializeProductDetails(productDetailsArray);
+$('#footer').load('/MainFiles/footer.html');
 
           </script>
 </body>

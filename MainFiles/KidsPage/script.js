@@ -6,11 +6,6 @@ function openPopup(){
 
   popup.classList.add('open-popup');
 }
-
-// document.querySelector(".submitButton").addEventListener("click",function(event){
-//   event.preventDefault();
-// })
-
   let firstParagraph1 =  document.querySelectorAll(".linkToBuy");
   firstParagraph1.forEach(element=>{
       element.addEventListener("click",(event)=>{
@@ -80,45 +75,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const myForm = document.getElementById('formDetails');
 
-// Attach the event listener to the form
 myForm.addEventListener('submit', function(event) {
-  // Prevent the default form submission behavior
   event.preventDefault();
 });
-let cart = JSON.parse(localStorage.getItem('cart'));
-console.log("Card before init" + cart);
-if (cart.length === 0){
-  cart = [];
-  console.log("Card after init" + cart);
+var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+let userCart = JSON.parse(localStorage.getItem(loggedInUserEmail + '_cart')) || [];
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// let cart = JSON.parse(localStorage.getItem('cart'));
+// console.log("Card before init" + cart);
+// if (cart.length === 0){
+//   cart = [];
+//   console.log("Card after init" + cart);
+
+// }
+function CartItem(productName,price,img){
+  this.productName =productName;
+  this.price =price;
+  this.img= img;
 }
 
 
+
 function addToCart(productName, price, img) {
-  const cartItem = { name: productName, price: price, img: img };
-  cart.push(cartItem);
-  console.log(cart)
-  
-  // Optionally, you can display an alert or update the UI to notify the user
+
+  // userCart
+  const cartItem = new CartItem(productName,price,img);
+  // const cartItem = { name: productName, price: price, img: img };
+  // cart.push(cartItem);
+  userCart.push(cartItem)
+  // cart.push(cartItem);
+  console.log(userCart)
   alert(`${productName} added to cart!`);
 }
 
 function viewCart() {
   // Save the cart to localStorage for use in the cart page
-  localStorage.setItem('cart', JSON.stringify(cart));
+  // var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+  // let userCart = JSON.parse(localStorage.getItem(loggedInUserEmail + '_cart')) || [];
+  // localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem(loggedInUserEmail + '_cart', JSON.stringify(userCart));
 
   // Navigate to the cart page
   window.location.href = '/MainFiles/Cart/cart.html';
 }
-
-// function clickandCollect(){
-
 document.addEventListener('click', function(event){
   if (event.target.classList.contains('submitButton')) {
 
-const getParagrah = document.querySelector(".productName").innerHTML;
-const getPrice = document.querySelector(".prductPrice").innerHTML;
-const getImage = document.querySelector(".productImage").src;
+    const getParagrah = document.querySelector(".productName").innerHTML;
+    const getPrice = document.querySelector(".prductPrice").innerHTML;
+    const getImage = document.querySelector(".productImage").src;
 addToCart(getParagrah,getPrice, getImage)
   }
 })
