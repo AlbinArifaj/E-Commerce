@@ -50,3 +50,26 @@ video {
   width: 100%;
   overflow: hidden;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-list li {
+  margin-bottom: 15px;
+}
+
+.main-list li:before {
+  content: "• ";
+  color: #ff3366; /* Pink bullet point color */
+}
+
+.sub-list {
+  margin-left: 20px;
+}
+
+.sub-list li:before {
+  content: "▹ ";
+  color: #3399ff; /* Blue bullet point color */
+}
