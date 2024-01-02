@@ -1,7 +1,3 @@
-document.querySelector(".sidebar").addEventListener("click",function(event){
-    event.preventDefault()
-  })
-  
           function showSidebar(){
   
               const sidebar=document.querySelector('.sidebar')

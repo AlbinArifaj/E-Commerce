@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHAE</title>
     <link rel="stylesheet" href="style.css">
@@ -10,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=DM+Serif+Display&family=Kanit:wght@200;300;400&family=Lobster&family=Preahvihear&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <style>
     svg{
     display: block;
@@ -19,118 +24,10 @@
   </style>
 </head>
 <body>
-  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">RHAE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Women
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/MainFiles/KidsPage/kidsShoes.html">SNEAKERS</a></li>
-              <li><a class="dropdown-item" href="#">HOODIES</a></li>
-              <li><a class="dropdown-item" href="#">SHIRTS</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Men
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item"  href="/MainFiles/KidsPage/kidsShoes.html">SNEAKERS</a></li>
-              <li><a class="dropdown-item" href="#">HOODIES</a></li>
-              <li><a class="dropdown-item" href="#">SHIRTS</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Kids
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item"  href="/MainFiles/KidsPage/kidsShoes.html">SNEAKERS</a></li>
-              <li><a class="dropdown-item" href="#">HOODIES</a></li>
-              <li><a class="dropdown-item" href="#">SHIRTS</a></li>
-            </ul>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li> -->
-      <!--  </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> -->
-    <!-- <div class="container-fluid" id="epara">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-2">
-                        <h3 style="color: white;">MENU</h3>
-                    </div>
-                    <div class="col-md-2">
-                          <h3 style="color: white;">WOMEN</h3>
-
-                    </div>
-                    <div class="col-md-2"> -->
-                            <!-- <h3 style="color: white;">MEN </h3> -->
-                    <!-- </div>
-                    <div class="col-md-6">
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-2">
-                        
-                    </div>
-                    <div class="col-md-2">
-                        
-                    </div>
-                    <div class="col-md-2">
-                        
-                    </div>
-                    <div class="col-md-2">
-                        
-                    </div>
-                    <div class="col-md-2">
-                        
-                    </div>
-                    <div class="col-md-2">
-                       <h3 style="color: white;">CONTACT</h3> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center" id="titulli">RHAE</div>
-        </div>
-            </div>
-            <div class="container-fluid text-center">
-                <div class="row">
-                    <div class="col"><h1 style="color:white;">RHAE</h1></div>
-                </div>
-            </div> -->
+  <div id="header"></div>
+ 
 
             <div id="carouselExample" class="carousel slide">
-                <!-- <p>asd</p> -->
                 <div class="carousel-inner">
                   <div class="carousel-item active item1">
                     <img style="height: 700px;" src="/Images/Img1.jpg" class="d-block w-100 " alt="...">
@@ -259,6 +156,44 @@
 </div>
 
 
+
+  <script>
+  $('#header').load('/MainFiles/HeaderFooter/header.html');
+
+</script>
+
+
+<script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
+              
+  <script src="/MainFiles/HomePage/carouselMoving.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Nese e kishim perdore tabelen kodi eshte ky ama po del ma keq nese mundeni dikush me e provu   
 
   <table class="fnd">
@@ -317,7 +252,3 @@
   h2.ff {
     text-align: center;
   } -->
-
-  <script src="/MainFiles/HomePage/carouselMoving.js"></script>
-</body>
-</html>
