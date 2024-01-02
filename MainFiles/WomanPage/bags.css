@@ -31,7 +31,7 @@ xample
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
+  animation-name: none;
   animation-duration: 8s;
 }
 
