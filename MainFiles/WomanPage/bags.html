@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
@@ -13,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet">
+    <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
+
     <title>Bags</title>
    <style>
     svg{
@@ -23,6 +27,7 @@
    </style>
 </head>
 <body class="finalStep">
+  <div id="header"></div>
     <div class="slideshow-container1">
         <div class="mySlides fade">
           <img src="/ImagesWoman/ImgBags/front_Page_Bags.jpg" style="width:100% ">
@@ -261,10 +266,11 @@ function showSlides() {
           " DIRO BOOK TOTE \n -Introduced by Maria Grazia Chiuri.\n -Creative Director of Christian Dior, the Dior Book Tote has become a staple of the Dior aesthetic.\n  -Adorned with the Christian Dior Paris signature on the front.\n  - gold-tone Butterfly Zodiac motif by Pietro Ruffo.\n -The bag’s large size can accommodate a 15-inch laptop, a pouch, a wallet, a phone, sunglasses and lipstick."]
 
 initializeProductDetails(productDetailsArray)
-$('#footer').load('/MainFiles/footer.html');
-
+$('#footer').load('/MainFiles/HeaderFooter/footer.html');
+$('#header').load('/MainFiles/HeaderFooter/header.html');
 
           </script>
+          <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
 
 </body>
 </html>

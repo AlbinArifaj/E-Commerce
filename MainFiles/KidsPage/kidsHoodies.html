@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
@@ -10,6 +12,7 @@
     <link href="/MainFiles/KidsPage/kidsShoes.css" rel="stylesheet">
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
 
     <style>
         .popup img{
@@ -25,6 +28,7 @@
 </head>
 <body>
 
+    <div id="header"></div>
 
     <div class="container-fluid">
         <div  class="row">
@@ -173,9 +177,10 @@
               </div>
             </div>
           </div>
+        
           <script src="/MainFiles/KidsPage/script.js"></script> 
           <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
-
+        
           <script>
             const productDetailsArray = [
   " Zipped Technical Long-Sleeved Top\n   - Color Options: Carbon Black, Steel Grey\n   - Material: Technical fabric blend\n   - Features: Zipped closure, long sleeves\n   - Best For: Athletic activities and casual wear\n   - Special Feature: Technical fabric for enhanced breathability and comfort.",
@@ -192,8 +197,12 @@
 ];
 
 initializeProductDetails(productDetailsArray);
-$('#footer').load('/MainFiles/footer.html');
+$('#footer').load('/MainFiles/HeaderFooter/footer.html');
+$('#header').load('/MainFiles/HeaderFooter/header.html');
+
 
           </script>
+       <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
+        
 </body>
 </html>
