@@ -65,3 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function getTotal(accumulator, itemPrice){
     return accumulator + itemPrice;
   }
+
+  document.getElementById("goBack").addEventListener("click",function(){
+    window.history.back();
+  })

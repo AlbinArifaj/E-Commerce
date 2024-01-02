@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,11 +74,13 @@
       }
     </style>
 </head>
-<body>
-    <nav>
+<body> -->
+
+    <header>   
+        <nav>
         <h1 style="margin-left: 100vh; position:absolute;margin-top: 10px;">RHAE</h1>
         <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li>MEN</li>
                 <li><a href="">SWEATERS</a></li>
                 <li><a href="">T SHIRTS</a></li>
@@ -104,10 +106,17 @@
             <li onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
+</header>
 
 
+<!--  
 
-    <script>
+
+     <script>
+        document.querySelector(".sidebar").addEventListener("click",function(event){
+        event.preventDefault()
+    })
+
         function showSidebar(){
             const sidebar=document.querySelector('.sidebar')
             sidebar.style.display='flex'
@@ -125,4 +134,4 @@
 
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 </body>
-</html>
+</html>  -->
