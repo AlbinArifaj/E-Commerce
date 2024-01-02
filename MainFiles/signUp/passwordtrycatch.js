@@ -38,7 +38,7 @@ try {
     var user = new User( fullName, gender, email, password, creditCard, expirationDate, cvv, newsletter, new Date());
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
-    loginUser(user.email);
+    loginUser(user.email,user.fullName);
 
     console.log(users.password); // array ne console behet print
 } catch (error) {
@@ -49,7 +49,9 @@ return true;
 }
 
 
-function loginUser(email) {
+function loginUser(email,fullName) {
+    localStorage.setItem("LogedUserName",fullName);
+
   localStorage.setItem('loggedInUserEmail', email);
   console.log(email)
   let userCart = JSON.parse(localStorage.getItem(email + '_cart')) || [];
