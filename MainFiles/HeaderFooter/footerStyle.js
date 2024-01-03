@@ -6,16 +6,20 @@
           function hideSidebar(){
               const sidebar = document.querySelector('.sidebar')
               sidebar.style.display='none'
-          }            var loggendInName = localStorage.getItem('LogedUserName');
-
+          }            
+       
 document.addEventListener('DOMContentLoaded', function() {
+    var loggendInName = localStorage.getItem('LogedUserName');
+    console.log(loggendInName);
 
 setTimeout(function() {
     let loggedInUserElement = document.querySelector(".loggedInUser");
-    console.log(loggedInUserElement);
 
-    if (loggedInUserElement) {
+
+    if (loggedInUserElement && loggendInName !== "null" ) {
         loggedInUserElement.innerHTML = loggendInName;
+        
+        console.log(loggedInUserElement.innerHTML);
 
         var selectElement= document.createElement('select')
         var option1 = document.createElement('option')
@@ -28,27 +32,26 @@ setTimeout(function() {
         loggedInUserElement.replaceWith(selectElement);
 
         var PargraphToLogin = document.createElement('p');
-        PargraphToLogin.text = "Login Or SignUp ->"
-        // loggedInUserElement.replaceWith(PargraphToLogin);
-
+        PargraphToLogin.innerHTML = ""
+        
         selectElement.addEventListener('change',function(){
             var selected = selectElement.options[selectElement.selectedIndex].text; 
             if(selected==="Log Out"){
                 var loogedOut =localStorage.setItem('LogedUserName',null);
                 localStorage.setItem('loggedInUserEmail',null);
-                option1.text = loogedOut    ;
-
-                console.log("Out")
+                option1.text = loogedOut;
+                alert("Logged Out")
                 selectElement.replaceWith(PargraphToLogin);
 
             }   
         })
-
+    
 
 
         console.log("Username");
     } else {
-        console.error("loggedInUses not found.");
+        console.log(" not found.");
     }
-}, 100);
+}, 1000);
+    
 });
