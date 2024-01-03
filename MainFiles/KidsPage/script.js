@@ -105,10 +105,29 @@ function addToCart(productName, price, img) {
   console.log("productName"+cartItem.productName)
   // const cartItem = { name: productName, price: price, img: img };
   // cart.push(cartItem);
-  userCart.push(cartItem)
+  var j=0;
+  console.log("cart:"+cartItem.productName);
+  for(var i=0;i <userCart.length ;i++){
+    console.log(userCart[i].productName); 
+    if(userCart[i].productName ===cartItem.productName){
+     j =1;
+    }
+  }
+
+  console.log(j);
+
+    if(j===1){
+      alert("Already Exist If You More Go Change Quantity ")
+    }else{      
+      userCart.push(cartItem)
+      console.log(userCart)
+      alert(` added to cart!`);
+    
+    }
+
+  
+
   // cart.push(cartItem);
-  console.log(userCart)
-  alert(`${productName} added to cart!`);
 }
 
 function viewCart() {

@@ -1,4 +1,5 @@
 var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+console.log("cart"+loggedInUserEmail)
 document.addEventListener('DOMContentLoaded', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');
 
