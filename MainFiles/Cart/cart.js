@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (cartJson) {
       const cart = JSON.parse(cartJson);
-      console.log("calling to diplay objects");
       displayCart(cart);
     } else {
       displayEmptyCart();
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var table = document.createElement("table");
     var thead = document.createElement("thead");
     var headerRow = thead.insertRow();
-    var headers = ["Product Image", "Product Name", "Price"];
+    var headers = ["Product Image", "Product Name","Quantity" ,"Price"];
     headers.forEach(function(header) {
       var th = document.createElement("th");
       th.textContent = header;
@@ -31,17 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
       cart.forEach(item => {
         var row = tbody.insertRow();
         var img = document.createElement("img");
+        var plus = document.createElement("input");
+        plus.type=Text;
+        plus.value= "+";
+        var quantity = document.createElement("input");
+        quantity.value =1;
+        quantity.type=Number;
+        quantity.setAttribute('min',1);
+        quantity.setAttribute('step',1);
         img.src = item.img;
-        row.insertCell(0)
-        .appendChild(img);
+        row.insertCell(0).appendChild(img);
+        
         row.insertCell(1).textContent = item.productName ;
-        row.insertCell(2).textContent = item.price;
+
+        row.insertCell(2).appendChild(quantity);
+        row.insertCell(3).textContent = item.price;
         // let price = item.price.slice(0,-1);
         let price =parseInt(item.price);
         console.log("price:"+price);
         let numberPrice =  Number(price);
-        // total +=numberPrice;
-        // console.log(total);
+
       });
       
       let totalPrice= cart.map(item => parseInt(item.price))
@@ -53,7 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
       lastRow.insertCell(1);
       let formattedPrice = totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
       console.log("Formated"+typeof formattedPrice)
-      lastRow.insertCell(2).textContent ="TOTAL:"+ formattedPrice+"$";
+      lastRow.insertCell(2);
+
+      lastRow.insertCell(3).textContent ="TOTAL:"+ formattedPrice+"$";
 
       table.appendChild(tbody);
       container.appendChild(table);    
