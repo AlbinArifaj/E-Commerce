@@ -161,7 +161,7 @@
         <div class="images">
             <img src="/Images/nikexdior.jpeg" height="400px" >
         </div>
-        <p class="air">Jordan 1 Retro High x Dior €2200</p>
+        <p class="air" id="animated">Jordan 1 Retro High x Dior €2200</p>
         <p class="air">    Order </p>
        
     </div>
@@ -232,10 +232,6 @@
 
 </div>
 <div class="fndi">
-  <!-- <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="50" cy="50" rx="25" ry="10" stroke="white" stroke-width="5" fill="white"/>
-    <circle cx="50" cy="50" r="12" fill="black"/>
-</svg> -->
     <h2 class="ff">About Us & Partners    </h2>
     <a href="#" class="about">Louis Vuitton    </a><br>
     <a href="#" class="about">Chanel    </a><br>
@@ -317,7 +313,14 @@
   h2.ff {
     text-align: center;
   } -->
+ 
 
+  <script>
+     $(document).ready(function(){
+      $("#animated").animate({ color: "#0000ff" }, 1000); // Change to red in 1 second
+    });
+  </script>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="/MainFiles/HomePage/carouselMoving.js"></script>
 </body>
 </html>
