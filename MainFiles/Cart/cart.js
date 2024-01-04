@@ -1,8 +1,8 @@
 var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
 console.log("cart"+loggedInUserEmail)
-document.addEventListener('DOMContentLoaded', function () {
-  initializePage();
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   initializePage();
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');
@@ -15,12 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
+  
   function displayCart(cart) {
     var container = document.getElementById("table-container");
     var table = document.createElement("table");
     var thead = document.createElement("thead");
     var headerRow = thead.insertRow();
-    var headers = ["Product Image", "Product Name","Quantity" ,"Price"];
+    var headers = ["Product Image", "Product Name","Quantity" ,"Price","RemoveItem"];
     headers.forEach(function(header) {
       var th = document.createElement("th");
       th.textContent = header;
@@ -30,14 +31,19 @@ document.addEventListener('DOMContentLoaded', function () {
   table.appendChild(thead);
       var tbody = document.createElement("tbody");
       console.log(cart);
-      // let total = 0;
       let totalPrice= cart.map(item => parseInt(item.price))
       .reduce(getTotal);
       console.log("Initial Total Price:", totalPrice); 
-      cart.forEach(item => {
+    
+      cart.forEach((item,index) => {
         var row = tbody.insertRow();
         var img = document.createElement("img");
         var plus = document.createElement("input");
+        var RemoveItem = document.createElement("button");
+        RemoveItem.textContent="X";
+        RemoveItem.addEventListener("click", function () {
+          RemoveItemm(index, cart);
+        });
         plus.id ="totalPriceCell"
         plus.type=Text;
         plus.value= "+";
@@ -68,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         row.insertCell(1).textContent = item.productName ;
         row.insertCell(2).appendChild(quantity);
         row.insertCell(3).textContent = parseInt(item.price) ;
+        row.insertCell(4).appendChild(RemoveItem);
         console.log("itemprice:"+typeof parseInt(item.price))
         let price =parseInt(item.price);
         console.log("price:"+price);
@@ -93,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function displayEmptyCart() {
     const cartContainer = document.getElementById('cart');
   }
+
   function updateQuantity(item,newQuantiy){
       item.quantity = newQuantiy;
   }
@@ -100,35 +108,37 @@ document.addEventListener('DOMContentLoaded', function () {
   function getTotal(accumulator, itemPrice){
     return accumulator + itemPrice;
   }
+
   function calculateItemPrice(quantity, price) {
     return parseInt(quantity) * parseInt(price);
-  
   }
+
   function updatePrice(row, item, newQuantity) {
     const priceCell = row.cells[3];
     item.quantity = newQuantity;
     const newPrice = calculateItemPrice(newQuantity, item.price);
     priceCell.textContent = newPrice +  "$";
-}
-function updateTotalPrice(cart) { 
-  let totalPrice = Array.isArray(cart) ? calculateTotalPrice(cart) : 0;
-  let formattedPrice = totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
- console.log(formattedPrice);
-  let lastCell = document.getElementById("lastCell") 
-  if (lastCell) {
-    lastCell.textContent = "TOTAL:" + formattedPrice + "$";
-} else {
-    console.error("Element with ID 'lastCell' not found");
-}
-console.log("Updated Total Price:", totalPrice); 
+  }
 
-}
-function calculateTotalPrice(cart) {
-  return cart.reduce((acc, item) => acc + calculateItemPrice(item.quantity || 1, item.price), 0);
-}
+  function updateTotalPrice(cart) { 
+    let totalPrice = Array.isArray(cart) ? calculateTotalPrice(cart) : 0;
+    let formattedPrice = totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+    console.log(formattedPrice);
+    let lastCell = document.getElementById("lastCell") 
+    if (lastCell) {
+    lastCell.textContent = "TOTAL:" + formattedPrice + "$";
+  } else {
+    console.error("Element with ID 'lastCell' not found");
+  }
+  console.log("Updated Total Price:", totalPrice); 
+
+  }
+  function calculateTotalPrice(cart) {
+    return cart.reduce((acc, item) => acc + calculateItemPrice(item.quantity || 1, item.price), 0);
+  }
   function updateCartInLocalStorage(cart) {
     localStorage.setItem(loggedInUserEmail + '_cart', JSON.stringify(cart));
-}
+  }
   document.getElementById("goBack").addEventListener("click",function(){
     window.history.back();
   })
@@ -147,10 +157,51 @@ function calculateTotalPrice(cart) {
     quantityInput.textContent = "TOTAL:" + totalprice + "$";
   }
 
+  function RemoveItemm(index,cart){
+    if (index>-1 && index < cart.length) {
+    console.log("RemoveItem called with index" + index)
+    cart.splice(index,1);
+    updateCartInLocalStorage(cart);
+    // displayCart(updatedCart);
+
+    const tableBody = document.querySelector("#table-container tbody");
+    // const rows = tableBody.children;
+
+    if (tableBody.children[index]) {
+      tableBody.removeChild(tableBody.children[index]);
+      
+    }
+
+   
+  }
+   
+  const updatedCart = JSON.parse(localStorage.getItem(loggedInUserEmail + '_cart'));
+
+  console.log(updatedCart);
+
+  if(updatedCart.length >0){
+    const initialTotalPrice = calculateTotalPriceForQuantityOne(cart);
+    displayPrice(initialTotalPrice);
+  }else{
+    console.log("nothing")
+    var container = document.getElementById("table-container");
+    container.innerHTML = "";
+  }
+  }
+
+
+  document.getElementById("Buy").addEventListener("click",function(){
+    console.log("Clicked")
+    var container = document.getElementById("table-container");
+    container.innerHTML = "";
+    localStorage.setItem(loggedInUserEmail + '_cart',null)
+  })
+
     window.addEventListener('load', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');
     if(cartJson){
     const cart = JSON.parse(cartJson);
+
     let initialTotalPrice = calculateTotalPriceForQuantityOne(cart);
     displayPrice(initialTotalPrice);
     console.log("initialTotalPrice"+initialTotalPrice)
