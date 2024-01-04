@@ -1,6 +1,6 @@
 body {
-    background: url('/MainFiles/signUp/background-for-sign-up.png') repeat;
-    background-size: cover;
+    background: url('/MainFiles/signUp/sign_up.jpg') repeat;
+    background-size: auto;
     background-attachment: fixed;
     background: linear-gradient(45deg, #e9f6ff, #e9f6ff);
     background-position: center center;

@@ -19,10 +19,9 @@
         }
 
         body {
-            background: url('/MainFiles/signUp/background-for-sign-up.png') repeat;
-            background-size: cover;
+            background: url('/MainFiles/signUp/sign_up.jpg') repeat;
+            background-size: 1600px;
             background-attachment: fixed;
-            background: linear-gradient(45deg, #e9f6ff, #e9f6ff);
             background-position: center center;
         }
 
@@ -113,7 +112,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button type="submit" class="btn btn-primary" id="signupButton">Sign Up</button>
 
                     <p class="mt-3">Already have an account? <a href="login.html" target="_blank">Go to Login</a></p>
                 </form>
@@ -126,8 +125,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/MainFiles/signUp/passwordtrycatch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-         
+         //Jquery event 
+         $(document).ready(function() {
+        $("#signupButton").mouseover(function() {
+        alert("You are now creating a new account");
+        });
+        });
         // password strength check
         document.getElementById('password').addEventListener('input', function () {
             var password = this.value;
