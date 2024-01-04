@@ -73,3 +73,22 @@ ul {
   content: "▹ ";
   color: #3399ff; /* Blue bullet point color */
 }
+#slideParagraph{
+  display: none;
+}
+button{
+  
+
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #1e7e94;
+  border-radius: 40px;
+  color:#fff;
+  font-size: 18px;
+
+}
+button:hover{
+  color:#fff;
+  background-color: rgb(97, 0, 0);
+  transition: 1s ease;
+}

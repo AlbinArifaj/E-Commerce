@@ -16,7 +16,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <style>
   table{
@@ -63,14 +63,16 @@
         <div class="col-md-6">
             <p style="text-align: justify;">
                 <strong>Artan Çitaku: Visionary Founder of Rhae</strong>
-                
-                Artan Çitaku, the creative force behind Rhae, is a trailblazing entrepreneur 
-                reshaping the fashion landscape. Armed with a Master's in Fashion Designing, 
-                Artan's innovative approach and commitment to authenticity have propelled Rhae
-                to the forefront of haute couture. Beyond fashion, Artan champions 
-                philanthropy and sustainability, reflecting a holistic vision for the industry. 
-                His journey inspires a generation to dream boldly and create fearlessly, 
-                marking Rhae as a symbol of style and luxury.
+                Artan Çitaku's journey into the realm of fashion is a testament to his unwavering passion and dedication to transforming the industry. 
+                Rhae, the brainchild of Artan Çitaku, stands as a beacon of creativity and sophistication in haute couture. The brand's ethos revolves
+                around a commitment to authenticity, pushing the boundaries of conventional design and making a profound impact on the fashion landscape.
+                Artan's keen eye for detail, coupled with his ability to anticipate and shape trends, has propelled Rhae to the forefront of the industry.</p>
+                <button class="button" id="slideButton">Show more</button>
+                <br>
+                <br>
+                <p id="slideParagraph">Rhae, 
+                has become synonymous with style and luxury, symbolizing not just a brand, but a lifestyle that embodies 
+                elegance, innovation, and a commitment to a better future.</p>
             </p>
         </div>
     </div>
@@ -154,17 +156,17 @@
 <br>
 
   <ul class="main-list">
-    <li>Immerse yourself in opulence and style with RHAE.</li>
-    <li>Curating an exclusive collection of fashion from iconic names.</li>
+    <li id="item1">Immerse yourself in opulence and style with RHAE.</li>
+    <li id="item2">Curating an exclusive collection of fashion from iconic names.</li>
     <li>Elevate your wardrobe with products carefully selected from renowned brands such as:
       
       <ul class="sub-list">
         <div class="row">
           <div class="col-md-3">
-        <li>Louis Vuitton</li>
-        <li>Prada</li>
-        <li>Nike</li>
-        <li>Chanel</li>
+            <li id="brand1">Louis Vuitton</li>
+            <li id="brand2">PRADA</li>
+            <li>Nike</li>
+            <li>Chanel</li>
       </div>
       <div class="col-md-3">
         
@@ -178,18 +180,69 @@
     
     
     <li>Louis Vuitton - An emblem of timeless elegance and craftsmanship.</li>
-    <li>Prada - Redefining contemporary fashion with innovation and style.</li>
+    <li id="appendContent">Prada - Redefining contemporary fashion with innovation and style.</li>
     <li>Nike - Unleash the power of sportswear with cutting-edge design.</li>
     <li>Chanel - A symbol of timeless sophistication and iconic fashion.</li>
     <li>Hermes - Luxurious craftsmanship and the art of living with finesse.</li>
     <li>Dior - Fusion of classic and modern, embodying haute couture.</li>
-    <li>Balenciaga - Pushing boundaries with avant-garde fashion and design.</li>
+    <li id="removeItem">Balenciaga - Pushing boundaries with <p id="removeContent">avant-garde</p> fashion and design.</li>
   </ul>
 </div>
 </div>
 
 
 <br><br>
+
+<script>
+    //remove() metoda/funct
+    $("#removeContent").remove(); 
+    $("#removeItem").text("Balenciaga - Pushing boundaries with fashion and design."); 
+
+
+    //Add perkatesisht append() metoda/funct
+    var additionalContent = " Our newest partner!";
+    $("#appendContent").append(additionalContent);
+
+
+
+    //GET SET
+    //get prej item 1
+      var item1Content = $("#item1").text();
+      console.log("Item 1 content:", item1Content);
+
+    // set ne item 2
+      $("#item2").text("Exclusive collection from the big ones!");
+
+    // get nga sub-list item
+      var brand1Content = $("#brand1").text();
+      console.log("Brand 1 content:", brand1Content);
+
+    // setting ne sub-list item
+      $("#brand2").text("Prada");
+
+
+
+    //slide in + callback
+      $(document).ready(function(){
+    //slide in
+      function slideInParagraph() {
+        $("#slideParagraph").slideDown(500, function(){ // 0.5 seconds
+    // Callback- hide p
+          $(this).delay(10000).slideUp(500); // Slide up 
+        });
+      }
+
+    //click event 
+      $("#slideButton").click(function(){
+    //slide in
+        slideInParagraph();
+      });
+    });
+
+
+
+
+</script>
 
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
     
