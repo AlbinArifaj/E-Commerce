@@ -23,18 +23,22 @@ h1{
 
 .button{
   margin-top:50px;
-  overflow: visible;
+  overflow: hidden;
+  background-color: #1e7e94;
+  width:fit-content;
+  border-radius: 40px;
+  padding: 8px 15px;
+  border:2px solid lightgrey;
 }
+
+
 .button a{
   text-decoration: none;
-  padding: 8px 25px;
-  background-color: #1e7e94;
-  border-radius: 40px;
   color:#fff;
   font-size: 18px;
   letter-spacing: 1.5px;
 }
-.button a:hover{
+.button:hover{
   color:#fff;
   background-color: rgb(97, 0, 0);
   transition: 1s ease;
@@ -62,7 +66,7 @@ ul {
 
 .main-list li:before {
   content: "• ";
-  color: #ff3366; /* Pink bullet point color */
+  color: #ff3366; 
 }
 
 .sub-list {
@@ -71,21 +75,13 @@ ul {
 
 .sub-list li:before {
   content: "▹ ";
-  color: #3399ff; /* Blue bullet point color */
+  color: #3399ff; 
 }
 #slideParagraph{
   display: none;
 }
 button{
-  
-
-  text-decoration: none;
-  padding: 5px 15px;
-  background-color: #1e7e94;
-  border-radius: 40px;
   color:#fff;
-  font-size: 18px;
-
 }
 button:hover{
   color:#fff;
@@ -102,7 +98,6 @@ button:hover{
 label {
   margin-bottom: 5px;
 }
-
 textarea {
   margin-bottom: 10px;
 }
