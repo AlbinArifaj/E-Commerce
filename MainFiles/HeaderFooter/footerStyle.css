@@ -6,6 +6,10 @@
     min-height:100vh;
    }
    nav{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
     background-color: white;
 
    }
