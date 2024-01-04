@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function calculateItemPrice(quantity, price) {
     return parseInt(quantity) * parseInt(price);
+    console.log("asdbhjsad")
   }
 
   function updatePrice(row, item, newQuantity) {
