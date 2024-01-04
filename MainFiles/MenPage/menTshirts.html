@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link href="/MainFiles/MenPage/menTshirts.css" rel="stylesheet"> -->
     <link href="/MainFiles/KidsPage/kidsShoes.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="pr econnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet">
+    <link href="/MainFiles/KidsPage/kidsShoes.css" rel="stylesheet">
+    <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
+
     <style>
         .popup img{
             width: 500px;
@@ -28,6 +34,7 @@
 </head>
 <body class="finalStep">
 
+    <div id="header"></div>
 
     <div class="container-fluid">
         <div  class="row">
@@ -81,7 +88,7 @@
                     <a class="linkToBuy" onclick="openPopup()">
                 <img alt="menTshirts" class="firstImage" src="/ImagesMen/TshirtsImages/imageedit_36_9845256585.png">
                 <p class="firstParagraph">Ami T-SHIRT Pink, Cotton </p>
-                <p class="qmimi">72.64$ <DEL>87.66$</DEL></p>
+                <p class="qmimi">72.64$ </p>
                 <p class="goToProduct">Go To Product</p>
             </a></div>
            
@@ -132,7 +139,7 @@
                 
                                     <img  class="productImage" src="/ImagesMen/TshirtsImages/Medium-764235TPVU41569_F.jpg">
                                     <button type="button" class="closePopupButton" onclick="closePopup()">X</button>
-                                    <form id="formDetails"  class="formDetails" >
+                                    <form  id="formDetails" class="formDetails" >
                                     <div class="allInfo">
                                     <p class="productName">AAA</p>
                                     <p class="ref">XYZ</p>
@@ -199,9 +206,11 @@
                             ];
                         
                             initializeProductDetails(productDetailsArray);
-                            $('#footer').load('/MainFiles/footer.html');
+                            $(  '#footer').load('/MainFiles/HeaderFooter/footer.html');
+                            $('#header').load('/MainFiles/HeaderFooter/header.html');
 
-                        </script>
+          </script>
+          <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
                         
 </body>
 </html>

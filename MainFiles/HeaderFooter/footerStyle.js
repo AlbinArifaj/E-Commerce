@@ -1,7 +1,3 @@
-document.querySelector(".sidebar").addEventListener("click",function(event){
-    event.preventDefault()
-  })
-  
           function showSidebar(){
   
               const sidebar=document.querySelector('.sidebar')
@@ -10,4 +6,52 @@ document.querySelector(".sidebar").addEventListener("click",function(event){
           function hideSidebar(){
               const sidebar = document.querySelector('.sidebar')
               sidebar.style.display='none'
-          }
+          }            
+       
+document.addEventListener('DOMContentLoaded', function() {
+    var loggendInName = localStorage.getItem('LogedUserName');
+    console.log(loggendInName);
+
+setTimeout(function() {
+    let loggedInUserElement = document.querySelector(".loggedInUser");
+
+
+    if (loggedInUserElement && loggendInName !== "null" ) {
+        loggedInUserElement.innerHTML = loggendInName;
+        
+        console.log(loggedInUserElement.innerHTML);
+
+        var selectElement= document.createElement('select')
+        var option1 = document.createElement('option')
+        option1.text = loggendInName;
+        selectElement.add(option1);
+
+        var option2 = document.createElement('option')
+        option2.text = "Log Out";
+        selectElement.add(option2);
+        loggedInUserElement.replaceWith(selectElement);
+
+        var PargraphToLogin = document.createElement('p');
+        PargraphToLogin.innerHTML = ""
+        
+        selectElement.addEventListener('change',function(){
+            var selected = selectElement.options[selectElement.selectedIndex].text; 
+            if(selected==="Log Out"){
+                var loogedOut =localStorage.setItem('LogedUserName',null);
+                localStorage.setItem('loggedInUserEmail',null);
+                option1.text = loogedOut;
+                alert("Logged Out")
+                selectElement.replaceWith(PargraphToLogin);
+
+            }   
+        })
+    
+
+
+        console.log("Username");
+    } else {
+        console.log(" not found.");
+    }
+}, 1000);
+    
+});

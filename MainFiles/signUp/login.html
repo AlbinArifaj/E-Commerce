@@ -97,6 +97,7 @@
             if( foundUser !== undefined && foundUser !== null){
                 alert('Login successful');                    
                     localStorage.setItem('loggedInUserEmail', foundUser.email);
+                    localStorage.setItem("LogedUserName",foundUser.fullName);
                     console.log(foundUser.email)
                     let userCart = JSON.parse(localStorage.getItem(foundUser.email + '_cart')) || [];
                     localStorage.setItem('cart', JSON.stringify(userCart));
