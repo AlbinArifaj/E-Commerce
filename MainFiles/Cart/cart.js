@@ -1,8 +1,5 @@
 var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
 console.log("cart"+loggedInUserEmail)
-// document.addEventListener('DOMContentLoaded', function () {
-//   initializePage();
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');
@@ -162,19 +159,12 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("RemoveItem called with index" + index)
     cart.splice(index,1);
     updateCartInLocalStorage(cart);
-    // displayCart(updatedCart);
-
     const tableBody = document.querySelector("#table-container tbody");
-    // const rows = tableBody.children;
-
     if (tableBody.children[index]) {
       tableBody.removeChild(tableBody.children[index]);
       
     }
-
-   
   }
-   
   const updatedCart = JSON.parse(localStorage.getItem(loggedInUserEmail + '_cart'));
 
   console.log(updatedCart);
@@ -183,7 +173,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const initialTotalPrice = calculateTotalPriceForQuantityOne(cart);
     displayPrice(initialTotalPrice);
   }else{
-    console.log("nothing")
+    var buttonElemnt = document.getElementById("Buy");
+    buttonElemnt.style.display="none";
     var container = document.getElementById("table-container");
     container.innerHTML = "";
   }
@@ -199,11 +190,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('load', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');
+    
     if(cartJson){
     const cart = JSON.parse(cartJson);
-
+    if(cart.length>0){
     let initialTotalPrice = calculateTotalPriceForQuantityOne(cart);
     displayPrice(initialTotalPrice);
-    console.log("initialTotalPrice"+initialTotalPrice)
+    }else{
+          var buttonElemnt = document.getElementById("Buy");
+    buttonElemnt.style.display="none";
+    }
     }
   });
