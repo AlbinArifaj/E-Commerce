@@ -23,6 +23,10 @@ setTimeout(function() {
 
         var selectElement= document.createElement('select')
         var option1 = document.createElement('option')
+        selectElement.style.border = "none";
+        selectElement.style.fontSize = "20px";
+        selectElement.style.boxShadow ="0 0 1em 0 rgba(0, 0, 0, 0.2)"
+        selectElement.style.padding = "5px";  
         option1.text = loggendInName;
         selectElement.add(option1);
 
