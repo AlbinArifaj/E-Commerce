@@ -19,7 +19,7 @@
         }
 
         body {
-            background: url('/MainFiles/signUp/sign_up.jpg') repeat;
+            background: url('/MainFiles/signUp/abstractback.jpg') repeat;
             background-size: 1600px;
             background-attachment: fixed;
             background-position: center center;
@@ -105,6 +105,7 @@
                         <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
                     </div>
 
+
                     <div class="form-group">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="newsletter" value="subscribe" checked>
@@ -112,14 +113,32 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="audioChallenge">For security purposes: Are you a robot?</label>
+                        <audio controls>
+                            <source src="/MainFiles/signUp/lion_audio1.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                        <small class="text-danger" id="audioChallengeError"></small>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="robotVerificationInput">Type the word you heard:</label>
+                        <input type="text" class="form-control" id="robotVerificationInput" placeholder="Enter the word" required>
+                    </div>
+
                     <button type="submit" class="btn btn-primary" id="signupButton">Sign Up</button>
+                    
+                    
 
                     <p class="mt-3">Already have an account? <a href="login.html" target="_blank">Go to Login</a></p>
                 </form>
-
+            </div>
+                <div class="col-md-6">
+                    <img class="vertical-image" src="/MainFiles/signUp/signup_back.JPG" alt="Vertical Image">
+                </div>
             </div>
         </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
@@ -127,10 +146,24 @@
     <script src="/MainFiles/signUp/passwordtrycatch.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        function validateForm() {
+        var input = document.getElementById('robotVerificationInput').value.toLowerCase();
+        var audioChallengeError = document.getElementById('audioChallengeError');
+
+        if (input !== 'lion') {
+            alert("The word entered is not correct!")
+            return false; // Do not allow
+        } else {
+            audioChallengeError.textContent = ''; // Clear any previous error message
+            return true; // Allow 
+        }
+    }
+
+
          //Jquery event 
          $(document).ready(function() {
         $("#signupButton").mouseover(function() {
-        alert("You are now creating a new account");
+        alert("Click to create account!");
         });
         });
         // password strength check
