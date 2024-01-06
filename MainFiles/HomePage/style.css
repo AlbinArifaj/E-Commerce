@@ -61,6 +61,23 @@ p.air{
     text-align: right;
     
 }
+
+a.air{
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  
+}
+
+a.air:hover{
+  background-color: black;
+  color:white;
+}
+a.rt{
+  text-decoration: none;
+  color: white;
+}
+
 @font-face {
     font-family: "Preahvihear-Regular";
     src: url(Preahvihear-Regular.ttf);
