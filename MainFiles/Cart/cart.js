@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var plus = document.createElement("input");
         var RemoveItem = document.createElement("button");
         RemoveItem.textContent="X";
+    
         RemoveItem.addEventListener("click", function () {
           RemoveItemm(index, cart);
         });
@@ -186,6 +187,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var container = document.getElementById("table-container");
     container.innerHTML = "";
     localStorage.setItem(loggedInUserEmail + '_cart',null)
+    var buttonElemnt = document.getElementById("Buy");
+    buttonElemnt.style.display="none";
   })
 
     window.addEventListener('load', function () {
@@ -198,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
     displayPrice(initialTotalPrice);
     }else{
           var buttonElemnt = document.getElementById("Buy");
-    buttonElemnt.style.display="none";
+          buttonElemnt.style.display="none";
     }
     }
   });
