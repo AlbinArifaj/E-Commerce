@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/MainFiles/ContactUs/contactus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="/MainFiles/KidsPage/checkout.css" rel="stylesheet"> 
-    
+    <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
+
     <title>Contact Us</title>
 </head>
+<div id="header"></div>
 <body>
     <div class="informationAboutUs">
         <h1 class="firstParagraph">Get in touch with our creator-friendly<br>    support team</h1>
@@ -52,7 +55,7 @@
         <p class="peopleNames">Arraya</p>
         <p class="peopleNames">Brittanys</p>
     </div>
-
+<!-- 
 
 
     
@@ -85,9 +88,15 @@
                 <h2 style="font-family: 'Montserrat', sans-serif;" class="ff">Email Sign-Up  </h2>
                <p class="entireParagraph"><a style="font-family: 'Montserrat', sans-serif;" class="sign" href="#">Sign up</a> for RHAE emails and receive the<br> latest news from La Maison, including<br> exclusive online  pre-launches<br> and new collections.</p>
                 </div>
-        </div>
-
+        </div> -->
+        <div id="footer"></div>
         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 
+        <script>
+            $('#footer').load('/MainFiles/HeaderFooter/footer.html');    
+            $('#header').load('/MainFiles/HeaderFooter/header.html');
+
+        </script>
+        <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
 </body>
 </html>

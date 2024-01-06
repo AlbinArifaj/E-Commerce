@@ -61,6 +61,23 @@ p.air{
     text-align: right;
     
 }
+
+a.air{
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  
+}
+
+a.air:hover{
+  background-color: black;
+  color:white;
+}
+a.rt{
+  text-decoration: none;
+  color: white;
+}
+
 @font-face {
     font-family: "Preahvihear-Regular";
     src: url(Preahvihear-Regular.ttf);
@@ -226,5 +243,39 @@ h2.ff{
   text-align: center;
 }  
   
+     /* SCROLL */
+     ::-webkit-scrollbar{
+      width: 9.6px;
+      border-radius: 8px;
+      background-color: rgb(39,40,37);
+  
+  }
+  ::-webkit-scrollbar-thumb{
+      background-color: rgb(65,66,61);
+      border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background-color: rgb(91,93,86);
+  }
+  /* SCROLL UP */
+  .scrollup{
+      position: fixed;
+      right: 16px;
+      bottom: -30%;
+      background-color: black;
+      display: inline-flex;
+      padding: 5.6px;
+      font-size: 20px;
+      color: white;
+      transition: .3s;
+      height: 35px;
+  }
+  .scrollup:hover{
+      transform: translateY(-4px);
+  }
+  /* Scroll Show Up */
+  .show-scroll{
+  bottom: 48px;
+  }
   
   

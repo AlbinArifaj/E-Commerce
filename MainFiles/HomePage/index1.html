@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHAE</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +24,17 @@
      margin: auto;
      margin-top: -25px;
   }
+  video{
+    width: 100%;
+
+  }
   </style>
 </head>
 <body>
   <div id="header"></div>
  
 
-            <div id="carouselExample" class="carousel slide">
+            <div style="z-index: 0;" id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active item1">
                     <img style="height: 700px; filter: brightness(70%);" src="/Images/Img1.jpg" class="d-block w-100 " alt="...">
@@ -51,24 +58,23 @@
               <div class="family">
                 <!-- <img src="/Images/Img4.jpeg" -->
                 <p style="text-shadow: 1px 1px 2px pink;">SS18 Europa Jacket, €740</p>
-                <p style="text-shadow: 1px 1px 2px pink;">Order</p>
+                <p ><a class="rt" style=" text-decoration: none; text-shadow: 1px 1px 2px pink;"  href="/MainFiles/WomanPage/casual.html#ll">Order</a></p>
             </div>
               <div class="modelet">
     <div class="card">
         <div class="images">
             <img src="/Images/nikexdior.jpeg" height="400px" >
-            <!-- <img src="" height="400px" > -->
         </div>
         <p class="air" id="animated">Jordan 1 Retro High x Dior €2200</p>
-        <p class="air">    Order </p>
+        <p class="r1"><a class="air" href="/MainFiles/MenPage/menSweaters.html#dd">Order</a></p>     
        
     </div>
     <div class="card">
         <div class="images">
-            <img src="/Images/prada_perfume.jpg" height="400px">
+            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/ProductsIMGS/N-5-eau-de_parfum-woutbg.png" height="400px">
         </div>
-        <p class="air">Prada Le Femme, €110 </p>
-        <p class="air">    Order </p>        
+        <p class="air">N&deg;5 Chanel </p>
+        <p class="r1"><a class="air" href="/MainFiles/HolidaySpecials/holidaySpecials.html#parfum">Order</a></p>      
     </div>
     </div>
     <br><br>
@@ -82,21 +88,21 @@
    
               </div>
               <p class="r1">Hermes Faubourg Tropical Birkin, €82,700</p>
-              <p class="r1">Order</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
             </td>
             <td class="carda">
               <div class="imagess" >
                 <img src="/Images/imageedit_5_9782814227.png" style="margin-top: -130px;" alt="foto qe mungon ne github">
               </div>
               <p class="r1">Longchamp Le Pliage Original, €140</p>
-              <p class="r1">Order</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
             </td>
             <td class="carda">
               <div class="imagess">
                 <img src="/Images/imageedit_2_7479978221.png" style="margin-top: -60px;" >
               </div>
               <p class="r1">Dior Book Tote, €6,500</p>
-              <p class="r1">Order</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
             </td>
           </tr>
         </table>
@@ -106,16 +112,23 @@
       <div class="holiday">
         <h3 id="holiday">HOLIDAY SPECIALS</h3>
         <div class="buttons-container">
-          <a href="#" class="button">WOMEN</a>
-          <a href="#" class="button">MEN</a>
+          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#women" class="button">WOMEN</a>
+          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#van_cleef" class="button">MEN</a>
         </div>
       </div> 
+      <div id="video-container">
+        <video title="Click to hear the sound !" id="myVideo" autoplay muted loop>
+            <source src="INSILENCE 2023 SPRING_SUMMER Campaign Film.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+      
+      
       <br>
       <div class="logo">
         <img src="/Images/imageedit_8_7775958965.png" alt="logo" height="20px" >
         <span>AND 3</span>
       </div>
-
       
       <div class="fnd">
 <div class="fndi">
@@ -123,22 +136,22 @@
     <a href="#" class="help">Our Client Services are available for call
         from 9 AM to 6 PM Monday to Thursday.</a>
     <a href="#" class="help">Email Services are available 24/7</a>
-    <a href="#" class="help">CONTACT US: 0800100</a>
+    <a href="tel:0800100" class="help">CONTACT US: 0800100</a>
     <br>
-    <a href="#" class="help">EMAIL: support@rhae.com</a>
+    <a href="mailto:support@rhae.com"  class="help">EMAIL: support@rhae.com</a>
     <br>
     <a href="#" class="help">Stores</a>
 
 </div>
 <div class="fndi">
     <h2 class="ff">About Us & Partners    </h2>
-    <a href="#" class="about">Louis Vuitton    </a><br>
-    <a href="#" class="about">Chanel    </a><br>
-    <a href="#" class="about">Dior    </a><br>
-    <a href="#" class="about">Hermes</a><br>
-    <a href="#" class="about">Nike    </a><br>
-    <a href="#" class="about">Prada</a><br>
-    <a href="#" class="about">Balenciaga</a><br>
+    <a href="https://us.louisvuitton.com/eng-us/homepage" class="about" target="_blank">Louis Vuitton</a><br>
+    <a href="https://www.chanel.com/us/" class="about" target="_blank">Chanel</a><br>
+    <a href="https://www.dior.com/en_int?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJtcJor14LEPV17q88vPtF6EpKilwbDPElYrCOkrBDxj0Q4HwVjDTjBoCNkIQAvD_BwE" class="about" target="_blank">Dior</a><br>
+    <a href="https://www.hermes.com/us/en/" class="about" target="_blank">Hermes</a><br>
+    <a href="https://www.nike.com/" class="about" target="_blank">Nike</a><br>
+    <a href="https://www.prada.com/us/en.html" class="about" target="_blank">Prada</a><br>
+    <a href="https://www.balenciaga.com/en-en" class="about" target="_blank">Balenciaga</a><br>
     <h1 style="color:black; text-align: center;font-family: 'Abril Fatface', serif;
     font-family: 'Caprasimo', serif;
     font-family: 'DM Serif Display', serif;
@@ -149,9 +162,13 @@
     </div>
     <div class="fndi">
         <h2 class="ff">Email Sign-Up  </h2>
-       <p class="lastParagraph"><a class="sign" href="#">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
+       <p class="lastParagraph"><a class="sign" href="/MainFiles/signUp/signUp.html">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
         </div>
 </div>
+
+<a href="#" class="scrollup" id="scroll-up">
+  <i style="align-items: center;" class="ri-arrow-up-line"></i>
+</a>
 
 
 
@@ -164,6 +181,7 @@
 <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
               
   <script src="/MainFiles/HomePage/carouselMoving.js"></script>
+  <script src="video.js" ></script>
 </body>
 </html>
 
