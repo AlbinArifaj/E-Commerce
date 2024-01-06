@@ -21,6 +21,10 @@
      margin: auto;
      margin-top: -25px;
   }
+  video{
+    width: 100%;
+
+  }
   </style>
 </head>
 <body>
@@ -105,10 +109,18 @@
       <div class="holiday">
         <h3 id="holiday">HOLIDAY SPECIALS</h3>
         <div class="buttons-container">
-          <a style="text-decoration: none;" href="#" class="button">WOMEN</a>
-          <a style="text-decoration: none;" href="#" class="button">MEN</a>
+          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#women" class="button">WOMEN</a>
+          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#van_cleef" class="button">MEN</a>
         </div>
       </div> 
+      <div id="video-container">
+        <video title="Click to hear the sound !" id="myVideo" autoplay muted loop>
+            <source src="INSILENCE 2023 SPRING_SUMMER Campaign Film.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+      
+      
       <br>
       <div class="logo">
         <img src="/Images/imageedit_8_7775958965.png" alt="logo" height="20px" >
@@ -121,22 +133,22 @@
     <a href="#" class="help">Our Client Services are available for call
         from 9 AM to 6 PM Monday to Thursday.</a>
     <a href="#" class="help">Email Services are available 24/7</a>
-    <a href="#" class="help">CONTACT US: 0800100</a>
+    <a href="tel:0800100" class="help">CONTACT US: 0800100</a>
     <br>
-    <a href="#" class="help">EMAIL: support@rhae.com</a>
+    <a href="mailto:support@rhae.com"  class="help">EMAIL: support@rhae.com</a>
     <br>
     <a href="#" class="help">Stores</a>
 
 </div>
 <div class="fndi">
     <h2 class="ff">About Us & Partners    </h2>
-    <a href="#" class="about">Louis Vuitton    </a><br>
-    <a href="#" class="about">Chanel    </a><br>
-    <a href="#" class="about">Dior    </a><br>
-    <a href="#" class="about">Hermes</a><br>
-    <a href="#" class="about">Nike    </a><br>
-    <a href="#" class="about">Prada</a><br>
-    <a href="#" class="about">Balenciaga</a><br>
+    <a href="https://us.louisvuitton.com/eng-us/homepage" class="about" target="_blank">Louis Vuitton</a><br>
+    <a href="https://www.chanel.com/us/" class="about" target="_blank">Chanel</a><br>
+    <a href="https://www.dior.com/en_int?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJtcJor14LEPV17q88vPtF6EpKilwbDPElYrCOkrBDxj0Q4HwVjDTjBoCNkIQAvD_BwE" class="about" target="_blank">Dior</a><br>
+    <a href="https://www.hermes.com/us/en/" class="about" target="_blank">Hermes</a><br>
+    <a href="https://www.nike.com/" class="about" target="_blank">Nike</a><br>
+    <a href="https://www.prada.com/us/en.html" class="about" target="_blank">Prada</a><br>
+    <a href="https://www.balenciaga.com/en-en" class="about" target="_blank">Balenciaga</a><br>
     <h1 style="color:black; text-align: center;font-family: 'Abril Fatface', serif;
     font-family: 'Caprasimo', serif;
     font-family: 'DM Serif Display', serif;
@@ -147,7 +159,7 @@
     </div>
     <div class="fndi">
         <h2 class="ff">Email Sign-Up  </h2>
-       <p class="lastParagraph"><a class="sign" href="#">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
+       <p class="lastParagraph"><a class="sign" href="/MainFiles/signUp/signUp.html">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
         </div>
 </div>
 
@@ -162,6 +174,7 @@
 <script src="/MainFiles/HeaderFooter/footerStyle.js"></script>
               
   <script src="/MainFiles/HomePage/carouselMoving.js"></script>
+  <script src="video.js" ></script>
 </body>
 </html>
 
