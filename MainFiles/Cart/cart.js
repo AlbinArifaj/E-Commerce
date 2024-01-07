@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var buttonElemnt = document.getElementById("Buy");
     buttonElemnt.style.display="none";
   })
+  
 
     window.addEventListener('load', function () {
     const cartJson = localStorage.getItem(loggedInUserEmail + '_cart');

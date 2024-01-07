@@ -92,14 +92,19 @@ const cartItem = new CartItem(productName,price,img);
 
     if(j===1){
       alert("Already Exist If You More Go Change Quantity ")
-    }else{      
+    }else{
+      if(loggedInUserEmail !=="null"){      
       userCart.push(cartItem)
       console.log(userCart)
       alert(` added to cart!`);
-    
+      }else{
+          alert("You must be logged in")
+      }
     }
 
 }
+
+  console.log(typeof loggedInUserEmail)
 function viewCart() {
   localStorage.setItem(loggedInUserEmail + '_cart', JSON.stringify(userCart));
   window.location.href = '/MainFiles/Cart/cart.html';
@@ -112,6 +117,7 @@ document.addEventListener('click', function(event){
 addToCart(getParagrah,getPrice, getImage)
   }
 })
+
 function closePopup(){
   popup.classList.remove('open-popup');
   $('html').css('overflow-y','scroll');
