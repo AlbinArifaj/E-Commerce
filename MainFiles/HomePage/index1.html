@@ -16,9 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=DM+Serif+Display&family=Kanit:wght@200;300;400&family=Lobster&family=Preahvihear&family=Vina+Sans&display=swap" rel="stylesheet">
     <link href="/MainFiles/HeaderFooter/footerStyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=DM+Serif+Display&family=Kanit:wght@200;300;400&family=Lobster&family=Montserrat:wght@300&family=Preahvihear&family=Vina+Sans&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <style>
+     *{
+        font-family: 'Montserrat', sans-serif;
+      }
     svg{
     display: block;
      margin: auto;
@@ -36,6 +42,11 @@
 
             <div style="z-index: 0;" id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
+                  <div class="row">22</div>
+                  <div class="row">22</div>
+                  
+              
+
                   <div class="carousel-item active item1">
                     <img style="height: 700px; filter: brightness(70%);" src="/Images/Img1.jpg" class="d-block w-100 " alt="...">
                   </div>
@@ -79,7 +90,7 @@
     </div>
     <br><br>
     <p id="reklama">Dior and more...</p>
-    <div class="reklamat">
+    <!-- <div class="reklamat">
         <table>
           <tr>
             <td class="carda">
@@ -106,15 +117,40 @@
             </td>
           </tr>
         </table>
+      </div> -->
+      <div class="reklamat">
+        <table>
+          <tr>
+            <td class="carda" draggable="true">
+              <div class="imagess">
+                <img src="/Images/imageedit_18_8739465563.png">
+              </div>
+              <p class="r1">Hermes Faubourg Tropical Birkin, €82,700</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
+            </td>
+            <td class="carda" draggable="true">
+              <div class="imagess">
+                <img src="/Images/imageedit_5_9782814227.png" style="margin-top: -130px;" alt="foto qe mungon ne github">
+              </div>
+              <p class="r1">Longchamp Le Pliage Original, €140</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
+            </td>
+            <td class="carda" draggable="true">
+              <div class="imagess">
+                <img src="/Images/imageedit_2_7479978221.png" style="margin-top: -60px;">
+              </div>
+              <p class="r1">Dior Book Tote, €6,500</p>
+              <p class="r1"><a class="air" href="/MainFiles/WomanPage/bags.html#ok">Order</a></p>
+            </td>
+          </tr>
+        </table>
       </div>
+      
       <br>
       <h2 class="trinity">TRINITY</h2>
       <div class="holiday">
-        <h3 id="holiday">HOLIDAY SPECIALS</h3>
-        <div class="buttons-container">
-          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#women" class="button">WOMEN</a>
-          <a style="text-decoration: none;" href="/MainFiles/HolidaySpecials/holidaySpecials.html#van_cleef" class="button">MEN</a>
-        </div>
+        <h3 id="holiday" ><a style="text-decoration: none; color: black;" href="/MainFiles/HolidaySpecials/holidaySpecials.html">HOLIDAY SPECIALS </a>  </h3>
+      
       </div> 
       <div id="video-container">
         <video title="Click to hear the sound !" id="myVideo" autoplay muted loop>
@@ -132,7 +168,7 @@
       
       <div class="fnd">
 <div class="fndi">
-<h2 class="ff">Help</h2>
+<h2 style="font-weight: bold;" class="ff">Help</h2>
     <a href="#" class="help">Our Client Services are available for call
         from 9 AM to 6 PM Monday to Thursday.</a>
     <a href="#" class="help">Email Services are available 24/7</a>
@@ -144,7 +180,7 @@
 
 </div>
 <div class="fndi">
-    <h2 class="ff">About Us & Partners    </h2>
+    <h2 style="font-weight: bold;" class="ff">About Us & Partners    </h2>
     <a href="https://us.louisvuitton.com/eng-us/homepage" class="about" target="_blank">Louis Vuitton</a><br>
     <a href="https://www.chanel.com/us/" class="about" target="_blank">Chanel</a><br>
     <a href="https://www.dior.com/en_int?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJtcJor14LEPV17q88vPtF6EpKilwbDPElYrCOkrBDxj0Q4HwVjDTjBoCNkIQAvD_BwE" class="about" target="_blank">Dior</a><br>
@@ -161,7 +197,7 @@
     font-family: 'Vina Sans', sans-serif;">RHAE</h1>
     </div>
     <div class="fndi">
-        <h2 class="ff">Email Sign-Up  </h2>
+        <h2 style="font-weight: bold;" class="ff">Email Sign-Up  </h2>
        <p class="lastParagraph"><a class="sign" href="/MainFiles/signUp/signUp.html">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
         </div>
 </div>
@@ -182,33 +218,11 @@
               
   <script src="/MainFiles/HomePage/carouselMoving.js"></script>
   <script src="video.js" ></script>
+  <script src="draganddrop.js"></script>
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 <!-- Nese e kishim perdore tabelen kodi eshte ky ama po del ma keq nese mundeni dikush me e provu   
 
