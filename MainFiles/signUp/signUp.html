@@ -31,7 +31,6 @@
             border-radius: 10px;
         }
 
-        /* Added style for password strength indicator */
         #passwordStrength {
             color: #4caf50;
             font-weight: bold;
@@ -159,13 +158,6 @@
         }
     }
 
-
-         //Jquery event 
-         $(document).ready(function() {
-        $("#signupButton").mouseover(function() {
-        alert("Click to create account!");
-        });
-        });
         // password strength check
         document.getElementById('password').addEventListener('input', function () {
             var password = this.value;
