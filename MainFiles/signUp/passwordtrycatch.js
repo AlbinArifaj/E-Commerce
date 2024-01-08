@@ -40,7 +40,8 @@ try {
 
     // Objekti per user
     var user = new User( fullName, gender, email, password, creditCard, expirationDate, cvv, newsletter, new Date());
-    users.push(user);
+    users.push("user"+user);
+    console.log(users)
     localStorage.setItem('users', JSON.stringify(users));
     loginUser(user.email,user.fullName);
 
@@ -55,8 +56,8 @@ return true;
 
 function loginUser(email,fullName) {
     localStorage.setItem("LogedUserName",fullName);
-
   localStorage.setItem('loggedInUserEmail', email);
+  
   console.log(email)
   let userCart = JSON.parse(localStorage.getItem(email + '_cart')) || [];
   localStorage.setItem('cart', JSON.stringify(userCart));
