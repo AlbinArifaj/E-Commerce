@@ -63,6 +63,99 @@ a.maks:hover {
     background-color: black;
     color: white;
 }
+
+.fnd {
+  /* width: 100%; */
+  width: 100%;
+  /* width: auto; */
+  border-collapse: collapse;
+}
+
+td {
+  /* width: 33.33%; Përcakto gjeresinë e njëjtë për të gjitha kolonat */
+  /* border: 1px solid #e3e3e3; */
+  /* padding: 10px; */
+}
+
+/* a.help,
+a.about,
+a.sign {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+} */
+
+a.help,
+a.about{
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+
+.lastParagraph{
+  /* margin-top: -30px; */
+  text-align: center;
+}
+
+.fnd td a {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+h2.ff {
+  text-align: center;
+  /* margin-top: -100px; */
+} 
+
+/* .lastTableParagraph{
+  margin-top: 200px;
+} */
+
+.lastTableh2{
+  text-align: center;
+  margin-top: -250px;
+}
+
+
+
+.lastTableRow{
+  /* margin-top: -2000px; */
+}
+
+
+.firstTableRow{
+  position: absolute;
+  display: block;
+  margin-left: 100px;
+  z-index: 100;
+  /* padding-right: -300px; */
+  /* padding-left: 40px; */
+}
+
+
+.secondRow{
+  position: relative;
+  padding-left: 500px;
+  /* margin-left: -2200px; */
+  /* display: inline-block; */
+}
+
+a.sign{
+  color: black;
+  text-decoration: none;
+}
+
+a.sign:hover{
+
+  text-decoration: underline;
+}
+
+.markUp{
+  border-radius: 15px;
+}
   
   </style>
 </head>
@@ -173,8 +266,8 @@ a.maks:hover {
         <img src="/Images/imageedit_8_7775958965.png" alt="logo" height="20px" >
         <span>AND 3</span>
       </div>
-      
-      <div class="fnd">
+      <!-- Nese e kishum perdore me grid -->
+      <!-- <div class="fnd">
 <div class="fndi">
 <h2 style="font-weight: bold;" class="ff">Help</h2>
     <a href="#" class="help">Our Client Services are available for call
@@ -186,8 +279,8 @@ a.maks:hover {
     <br>
     <a href="#" class="help">Stores</a>
 
-</div>
-<div class="fndi">
+</div> -->
+<!-- <div class="fndi">
     <h2 style="font-weight: bold;" class="ff">About Us & Partners    </h2>
     <a href="https://us.louisvuitton.com/eng-us/homepage" class="about" target="_blank">Louis Vuitton</a><br>
     <a href="https://www.chanel.com/us/" class="about" target="_blank">Chanel</a><br>
@@ -208,7 +301,39 @@ a.maks:hover {
         <h2 style="font-weight: bold;" class="ff">Email Sign-Up  </h2>
        <p class="lastParagraph"><a class="sign" href="/MainFiles/signUp/signUp.html">Sign up</a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online <br>pre-launches and new collections.</p>
         </div>
-</div>
+</div> -->
+<table class="fnd">
+  <tr>
+    <td class="firstTableRow">
+    
+      <h2 class="ff">Help</h2>
+      <a href="#" class="help">Our Client Services are available for call from<br> 9 AM to 6 PM Monday to Thursday.</a>
+      <a href="#" class="help">Email Services are available 24/7</a>
+        <a href="tel:0800100" class="help">CONTACT US: 0800100</a>
+      <br>
+      <a href="mailto:support@rhae.com" class="help">EMAIL: support@rhae.com</a>
+      <br>
+      <a href="#" class="help">Stores</a>
+    
+
+    </td>
+    <td class="secondRow">
+      <h2 class="ff">About Us & Partners</h2>
+      <a href="https://us.louisvuitton.com/eng-us/homepage" class="about" target="_blank">Louis Vuitton</a><br>
+      <a href="https://www.chanel.com/us/" class="about" target="_blank">Chanel</a><br>
+      <a href="https://www.dior.com/en_int?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJtcJor14LEPV17q88vPtF6EpKilwbDPElYrCOkrBDxj0Q4HwVjDTjBoCNkIQAvD_BwE" class="about" target="_blank">Dior</a><br>
+      <a href="https://www.hermes.com/us/en/" class="about" target="_blank">Hermes</a><br>
+      <a href="https://www.nike.com/" class="about" target="_blank">Nike</a><br>
+      <a href="https://www.prada.com/us/en.html" class="about" target="_blank">Prada</a><br>
+      <a href="https://www.balenciaga.com/en-en" class="about" target="_blank">Balenciaga</a>
+    </td>
+    <td class="lastTableRow">
+      <h2 class="lastTableh2">Email Sign-Up</h2>
+      <p class="lastParagraph"><a class="sign" href="/MainFiles/signUp/signUp.html"><mark class="markUp">Sign up</mark></a> for RHAE emails and receive the latest news<br> from La Maison, including exclusive online<br> pre-launches and new collections.</p>
+    </td>
+  </tr>
+</table>
+
 
 <a href="#" class="scrollup" id="scroll-up">
   <i style="align-items: center;" class="ri-arrow-up-line"></i>
@@ -230,64 +355,5 @@ a.maks:hover {
 </body>
 </html>
 
- 
 
-<!-- Nese e kishim perdore tabelen kodi eshte ky ama po del ma keq nese mundeni dikush me e provu   
-
-  <table class="fnd">
-    <tr>
-      <td>
-        <h2 class="ff">Help</h2>
-        <a href="#" class="help">Our Client Services are available for call from 9 AM to 6 PM Monday to Thursday.</a>
-        <a href="#" class="help">Email Services are available 24/7</a>
-        <a href="#" class="help">CONTACT US: 0800100</a>
-        <br>
-        <a href="#" class="help">EMAIL: support@rhae.com</a>
-        <br>
-        <a href="#" class="help">Stores</a>
-      </td>
-      <td>
-        <h2 class="ff">About Us & Partners</h2>
-        <a href="#" class="about">Louis Vuitton</a><br>
-        <a href="#" class="about">Chanel</a><br>
-        <a href="#" class="about">Dior</a><br>
-        <a href="#" class="about">Hermes</a><br>
-        <a href="#" class="about">Nike</a><br>
-        <a href="#" class="about">Prada</a><br>
-        <a href="#" class="about">Balenciaga</a>
-      </td>
-      <td>
-        <h2 class="ff">Email Sign-Up</h2>
-        <p><a class="sign" href="#">Sign up</a> for RHAE emails and receive the latest news from La Maison, including exclusive online pre-launches and new collections.</p>
-      </td>
-    </tr>
-  </table>-->
-  <!-- CSS PER TABELE:.fnd {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  td {
-    width: 33.33%; /* Përcakto gjeresinë e njëjtë për të gjitha kolonat */
-    border: 1px solid #e3e3e3;
-    padding: 10px;
-  }
-  
-  a.help,
-  a.about,
-  a.sign {
-    display: block;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  
-  .fnd td a {
-    line-height: 24px;
-    margin-bottom: 20px;
-  }
-  
-  h2.ff {
-    text-align: center;
-  } -->
 
