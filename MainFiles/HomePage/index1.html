@@ -34,6 +34,36 @@
     width: 100%;
 
   }
+  .grup table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grup .karta {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+.grup .karta .imagesss {
+    margin: 20px 0;
+    font-size: 32px;
+    align-self: center;
+}
+
+p.maks {
+    text-align: right;
+}
+
+a.maks, a.r2 {
+    text-decoration: none;
+    color: black;
+}
+
+a.maks:hover {
+    background-color: black;
+    color: white;
+}
+  
   </style>
 </head>
 <body>
@@ -71,24 +101,29 @@
                 <p style="text-shadow: 1px 1px 2px pink;">SS18 Europa Jacket, €740</p>
                 <p ><a class="rt" style=" text-decoration: none; text-shadow: 1px 1px 2px pink;"  href="/MainFiles/WomanPage/casual.html#ll">Order</a></p>
             </div>
-              <div class="modelet">
-    <div class="card">
-        <div class="images">
-            <img src="/Images/nikexdior.jpeg" height="400px" >
-        </div>
-        <p class="air" id="animated">Jordan 1 Retro High x Dior €2200</p>
-        <p class="r1"><a class="air" href="/MainFiles/MenPage/menSweaters.html#dd">Order</a></p>     
-       
-    </div>
-    <div class="card">
-        <div class="images">
-            <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/ProductsIMGS/N-5-eau-de_parfum-woutbg.png" height="400px">
-        </div>
-        <p class="air">N&deg;5 Chanel </p>
-        <p class="r1"><a class="air" href="/MainFiles/HolidaySpecials/holidaySpecials.html#parfum">Order</a></p>      
-    </div>
-    </div>
-    <br><br>
+           
+    
+    <div class="grup">
+      <table>
+          <tr>
+              <td class="karta">
+                  <div class="imagesss">
+                      <img src="/Images/nikexdior.jpeg" height="400px">
+                  </div>
+                  <p class="maks" id="animated">Jordan 1 Retro High x Dior €2200</p>
+                  <p class="r2"><a class="maks" href="/MainFiles/MenPage/menSweaters.html#dd">Order</a></p>
+              </td>
+              <td class="karta">
+                  <div class="imagesss">
+                      <img src="/MainFiles/HolidaySpecials/holidayspecialsIMG/ProductsIMGS/N-5-eau-de_parfum-woutbg.png" height="400px">
+                  </div>
+                  <p class="maks">N&deg;5 Chanel </p>
+                  <p class="r2"><a class="maks" href="/MainFiles/HolidaySpecials/holidaySpecials.html#parfum">Order</a></p>
+              </td>
+          </tr>
+      </table>
+  </div>
+  <br><br>
     <p id="reklama">Dior and more...</p>
     <!-- <div class="reklamat">
         <table>
