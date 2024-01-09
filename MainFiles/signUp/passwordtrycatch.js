@@ -25,9 +25,6 @@ var newsletter = document.getElementById('newsletter').checked;
 var input = document.getElementById('robotVerificationInput').value.toLowerCase();
 var audioChallengeError = document.getElementById('audioChallengeError');
 
-// try{
- 
-// }
 
 try {
     if (password !== confirmPassword) {
@@ -35,11 +32,9 @@ try {
     }
     if (input !== 'lion') {
         alert("The word entered is not correct!")
-        // return false; // Do not allow
         throw "Input incorrect";
     } else {
         audioChallengeError.textContent = ''; // Clear any previous error message
-        // return true; // Allow 
     }
 
   

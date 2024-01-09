@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var loggendInName = localStorage.getItem('LogedUserName');
     console.log(loggendInName);
 
-setTimeout(function() {
+setTimeout(function() { 
     let loggedInUserElement = document.querySelector(".loggedInUser");
 
 
