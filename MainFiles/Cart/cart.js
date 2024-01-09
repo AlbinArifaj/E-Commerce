@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const cart = JSON.parse(cartJson);
       displayCart(cart);
     } else {
+      var buttonElemnt = document.getElementById("Buy");
+      buttonElemnt.style.display="none";
       displayEmptyCart();
     }
   });
@@ -38,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var plus = document.createElement("input");
         var RemoveItem = document.createElement("button");
         RemoveItem.textContent="X";
+        // var buttonElemnt = document.getElementById("Buy");
+        // buttonElemnt.style.display="none";
     
         RemoveItem.addEventListener("click", function () {
           RemoveItemm(index, cart);
@@ -97,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function displayEmptyCart() {
     const cartContainer = document.getElementById('cart');
+
   }
 
   function updateQuantity(item,newQuantiy){
@@ -168,9 +173,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   const updatedCart = JSON.parse(localStorage.getItem(loggedInUserEmail + '_cart'));
 
-  console.log(updatedCart);
+  // console.log(typeof updatedCart.length);
 
-  if(updatedCart.length >0){
+  if(updatedCart.length >=1){
     const initialTotalPrice = calculateTotalPriceForQuantityOne(cart);
     displayPrice(initialTotalPrice);
   }else{
@@ -186,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("Clicked")
     var container = document.getElementById("table-container");
     container.innerHTML = "";
-    localStorage.setItem(loggedInUserEmail + '_cart',null)
+    // localStorage.setItem(loggedInUserEmail + '_cart',null)
     var buttonElemnt = document.getElementById("Buy");
     buttonElemnt.style.display="none";
   })
