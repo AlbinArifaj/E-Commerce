@@ -92,20 +92,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-        function validateForm() {
-        var input = document.getElementById('robotVerificationInput').value.toLowerCase();
-        var audioChallengeError = document.getElementById('audioChallengeError');
+        // function validateForm() {
+            // document.getElementById('robotVerificationInput').addEventListener("onsubmit",function(){
+        // var input = document.getElementById('robotVerificationInput').value.toLowerCase();
+        // var audioChallengeError = document.getElementById('audioChallengeError');
 
-        if (input !== 'land') {
-            alert("The word entered is not correct!")
-            return false; // Do not allow
-        } else {
-            audioChallengeError.textContent = ''; // Clear any previous error message
-            return true; // Allow 
-        }
-    }
+        // if (input !== 'land') {
+        //     alert("The word entered is not correct!")
+        //     return false; // Do not allow
+        // } else {
+        //     audioChallengeError.textContent = ''; // Clear any previous error message
+        //     return true; // Allow 
+        // }
+    // }
+// })
 
-        //hide
+        hide
         $(document).ready(function() {
         $("#loginButton").click(function() {
         $(this).hide(1000);
@@ -120,15 +122,26 @@
         });
   
         var users = JSON.parse(localStorage.getItem('users')) || []; // e thirrim array
+
         function validateLogin() {
             var enteredEmail = document.getElementById('loginEmail').value;
             var enteredPassword = document.getElementById('loginPassword').value;
 
             // i marrim user info prej localStorage
             var users = JSON.parse(localStorage.getItem('users')) || [];
-            
+            console.log("USers:"+users)
             let foundUser = users.filter(user => user.email === enteredEmail && user.password === enteredPassword)[0]; 
             console.log("FoundUSer:"+foundUser);
+            var input = document.getElementById('robotVerificationInput').value.toLowerCase();
+        var audioChallengeError = document.getElementById('audioChallengeError');
+
+            if (input !== 'land') {
+                alert("The word entered is not correct!")
+                foundUser= null // Do not allow
+            }  else {
+            audioChallengeError.textContent = ''; // Clear any previous error message
+            // return true; // Allow 
+            }
             if( foundUser !== undefined && foundUser !== null){
                 alert('Login successful');                    
                     localStorage.setItem('loggedInUserEmail', foundUser.email);
@@ -138,7 +151,7 @@
                     localStorage.setItem('cart', JSON.stringify(userCart));
 
             }else{
-                alert('Login failed. Please check your email and password.');
+                alert('Login failed');
                 return false;
             }
         }

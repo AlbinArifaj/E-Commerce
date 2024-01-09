@@ -205,4 +205,10 @@ document.addEventListener('DOMContentLoaded', function () {
           buttonElemnt.style.display="none";
     }
     }
+    var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+
+    if(loggedInUserEmail==="null" ){
+      var buttonElemnt = document.getElementById("Buy");
+      buttonElemnt.style.display="none";
+    }
   });
