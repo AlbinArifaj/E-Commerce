@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-md-6">
 
-                <form class="customF" action="/MainFiles/HomePage/index1.html"  onsubmit="return validateForm()">
+                <form class="customF" id="customF" action="/MainFiles/HomePage/index1.html"  onsubmit="return validateForm()">
                     <h2 class="mb-4 text-left">Sign Up</h2>
 
                     <div class="form-group">
@@ -145,18 +145,18 @@
     <script src="/MainFiles/signUp/passwordtrycatch.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        function validateForm() {
-        var input = document.getElementById('robotVerificationInput').value.toLowerCase();
-        var audioChallengeError = document.getElementById('audioChallengeError');
+    //     function validateForm() {
+    //     var input = document.getElementById('robotVerificationInput').value.toLowerCase();
+    //     var audioChallengeError = document.getElementById('audioChallengeError');
 
-        if (input !== 'lion') {
-            alert("The word entered is not correct!")
-            return false; // Do not allow
-        } else {
-            audioChallengeError.textContent = ''; // Clear any previous error message
-            return true; // Allow 
-        }
-    }
+    //     if (input !== 'lion') {
+    //         alert("The word entered is not correct!")
+    //         return false; // Do not allow
+    //     } else {
+    //         audioChallengeError.textContent = ''; // Clear any previous error message
+    //         return true; // Allow 
+    //     }
+    // }
 
         // password strength check
         document.getElementById('password').addEventListener('input', function () {

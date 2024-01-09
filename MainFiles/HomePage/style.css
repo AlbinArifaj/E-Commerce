@@ -204,7 +204,8 @@ p {
     margin: 0 auto;
     align-items: center; 
   }
-  .fnd {
+  /* Nese e kishum perdore me grid  */
+  /* .fnd {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -241,7 +242,7 @@ h2.ff{
   
 .lastParagraph{
   text-align: center;
-}  
+}   */
   
      /* SCROLL */
      ::-webkit-scrollbar{
