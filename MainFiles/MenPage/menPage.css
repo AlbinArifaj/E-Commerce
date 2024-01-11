@@ -7,9 +7,10 @@
 
 
 .container-fluid{
-    margin-top: 20px;
+    margin-top: 65px;
 
 }
+
 .col-md-4:hover img{
     filter: blur(10px);
     transition: 0.7s;
@@ -92,7 +93,8 @@
     margin-left: 700px;
     font-size: 40px;
     border: 0px;
-    background-color: white
+    background-color: white;
+
 }
 
 
