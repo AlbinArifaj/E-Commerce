@@ -191,9 +191,9 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("Clicked")
     var container = document.getElementById("table-container");
     container.innerHTML = "";
-    // localStorage.setItem(loggedInUserEmail + '_cart',null)
-    var buttonElemnt = document.getElementById("Buy");
-    buttonElemnt.style.display="none";
+    localStorage.setItem(loggedInUserEmail + '_cart',null)
+  //   var buttonElemnt = document.getElementById("Buy");
+  //   buttonElemnt.style.display="none";
   })
   
 
